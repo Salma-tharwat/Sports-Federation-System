@@ -10,23 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SFS
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SalaryQueryDataGrid.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SalaryQueryDataGrid : Window
     {
-        public MainWindow()
+        public SalaryQueryDataGrid()
         {
             InitializeComponent();
-            mainqueryform f = new mainqueryform();
-            f.Show();
-           
-            
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            SalaryQuery sq = new SalaryQuery();
+            sq.Show();
+            this.Close();
         }
     }
 }

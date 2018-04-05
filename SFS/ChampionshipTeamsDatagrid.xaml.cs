@@ -10,23 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SFS
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ChampionshipTeamsDatagrid.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ChampionshipTeamsDatagrid : Window
     {
-        public MainWindow()
+        public ChampionshipTeamsDatagrid()
         {
             InitializeComponent();
-            mainqueryform f = new mainqueryform();
-            f.Show();
-           
-            
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            TeamChampionShipsQuery ts = new TeamChampionShipsQuery();
+            ts.Show();
+            this.Close();
         }
     }
 }

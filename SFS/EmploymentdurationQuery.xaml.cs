@@ -10,23 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SFS
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EmploymentdurationQuery.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EmploymentdurationQuery : Window
     {
-        public MainWindow()
+        public EmploymentdurationQuery()
         {
             InitializeComponent();
-            mainqueryform f = new mainqueryform();
-            f.Show();
-           
-            
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeEmploymentDateDG dd = new EmployeeEmploymentDateDG();
+            dd.Show();
+            this.Close();
         }
     }
 }
