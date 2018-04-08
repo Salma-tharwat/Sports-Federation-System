@@ -63,3 +63,6 @@ C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug
 C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\TeamChampionShipsQuery.g.cs
 C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\ChampionshipTeamsDatagrid.baml
 C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\TeamChampionShipsQuery.baml
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
