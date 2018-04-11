@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Employees>
+  <Employee>
+    <Employee_Name>omar</Employee_Name>
+    <Employment_ID>om98</Employment_ID>
+    <Mobile_Number>022345678</Mobile_Number>
+    <Gender>Male</Gender>
+    <Medical_Form>Yes</Medical_Form>
+    <Salary>3</Salary>
+    <Bonus>0</Bonus>
+    <Employement_Date>11/19/2020</Employement_Date>
+    <Working_Years>-2002</Working_Years>
+    <Date_of_birth>1/7/1998</Date_of_birth>
+    <Available>Yes</Available>
+    <Department>hr</Department>
+  </Employee>
+</Employees>

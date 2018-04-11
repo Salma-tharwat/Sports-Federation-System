@@ -8,8 +8,8 @@
         Title="MainWindow" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/dfbdeb52-a232-46f8-81db-afe8a1bedebc.jpg"/>
+            <ImageBrush/>
         </Grid.Background>
-
     </Grid>
 </Window>
+       
