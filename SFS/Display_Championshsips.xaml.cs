@@ -29,5 +29,10 @@ namespace SFS
             Search_Championship c = new Search_Championship();
             c.Show();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -48,15 +48,16 @@ namespace SFS
             // string ID =  Name.Text.ElementAt(0)+ Name.Text.ElementAt(1) +Date.Text.ElementAt(6) + Date.Text.ElementAt(7);
             string temp = Date.Text;
             string temp2=Name.Text;
-            string id = temp2[0].ToString() + temp2[1].ToString() + temp[6].ToString() + temp[7].ToString();
+            string id = temp2[0].ToString() + temp2[1].ToString() + temp[5].ToString() + temp[6].ToString();
           //  MessageBox.Show(id);
             if (Male.IsChecked == true)
                 gender = "Male";
             else gender = "Female";
 
             if (Yes.IsChecked == true)
-                med = "Yes";
-            else med = "No";
+                med = "YES";
+            else
+                med = "NO";
            
             if (Yes3.IsChecked == true)
                 avail = "Yes";
@@ -96,7 +97,7 @@ namespace SFS
                 document.WriteEndElement();
 
                 document.WriteStartElement("Medical_Form");
-                document.WriteString(med);
+                document.WriteString(med.ToString());
                 document.WriteEndElement();
 
                 document.WriteStartElement("Salary");
@@ -160,7 +161,7 @@ namespace SFS
                 employee.AppendChild(Genderr);
 
                 XmlNode Medical = doc.CreateElement("Medical_Form");
-                Medical.InnerText = med;
+                Medical.InnerText = med.ToString();
                 employee.AppendChild(Medical);
 
                 XmlNode salary = doc.CreateElement("Salary");

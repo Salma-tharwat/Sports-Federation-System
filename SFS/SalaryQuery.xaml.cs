@@ -26,6 +26,47 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            List<Employee> filtered = new List<Employee>();
+            for(int i=0; i<Containers.Employee_list.Count();i++)
+            {
+                   if(comboBox.Text== "Less Than or Equal")
+                          {
+                             if(Containers.Employee_list[i].getSalary()<=int.Parse(SalaryComparasionValue.Text))
+                                 {
+                        filtered.Add(Containers.Employee_list[i]);
+                                  }
+                          }
+                   else if(comboBox.Text== "Greater Than or equal")
+                {
+                    if (Containers.Employee_list[i].getSalary() >= int.Parse(SalaryComparasionValue.Text))
+                    {
+                        filtered.Add(Containers.Employee_list[i]);
+                    }
+                }
+                   else if(comboBox.Text== "Greater than")
+                {
+                    if (Containers.Employee_list[i].getSalary() > int.Parse(SalaryComparasionValue.Text))
+                    {
+                        filtered.Add(Containers.Employee_list[i]);
+                    }
+                }
+                   else if(comboBox.Text== "Less than")
+                {
+                    if (Containers.Employee_list[i].getSalary() < int.Parse(SalaryComparasionValue.Text))
+                    {
+                        filtered.Add(Containers.Employee_list[i]);
+                    }
+                }
+                   else if(comboBox.Text== "Equal")
+                {
+                    if (Containers.Employee_list[i].getSalary() == int.Parse(SalaryComparasionValue.Text))
+                    {
+                        filtered.Add(Containers.Employee_list[i]);
+                    }
+                }
+
+            }
+            
             SalaryQueryDataGrid sd = new SalaryQueryDataGrid();
             sd.Show();
             this.Close();

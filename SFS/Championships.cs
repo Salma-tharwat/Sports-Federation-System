@@ -11,8 +11,8 @@ namespace SFS
         string Name;
         string place;
         string type;
-        bool senior;
-        List<Team> teamList;
+        string senior;
+        public List<Team> teamList;
         int results;
         public Championships()
         {
@@ -22,7 +22,7 @@ namespace SFS
             results = 0;
            
         }
-        public Championships(string placee,string Type,bool sn)
+        public Championships(string placee,string Type,string sn)
         {
             place = placee;
             type = Type;

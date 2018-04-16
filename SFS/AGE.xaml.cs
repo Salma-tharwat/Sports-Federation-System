@@ -34,32 +34,57 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-               
-              for (int i = 0; i < Containers.Player_list.Count; i++)
+            List<Player> l = Containers.Player_list;
+              for (int i = 0; i < l.Count; i++)
               {
-                  for (int j = i + 1; j < Containers.Player_list.Count; j++)
+                  for (int j = i + 1; j < l.Count; j++)
                   {
-                      if (Containers.Player_list[i].ageCalculator() > Containers.Player_list[j].ageCalculator())
+                      if( l[i].ageCalculator() > l[i].ageCalculator())
                       {
-                          Player temp = Containers.Player_list[i];
-                          Containers.Player_list[i] = Containers.Player_list[j];
-                          Containers.Player_list[j] = temp;
+                          Player temp = l[i];
+                          l[i] = l[j];
+                         l[j] = temp;
                       }
                   }
               }
               List<Player> juniors = new List<Player>();
               List<Player> seniors = new List<Player>();
-              for(int i=0;i<Containers.Player_list.Count;i++)
+              for(int i=0;i<l.Count;i++)
               {
-                  if(Containers.Player_list[i].ageCalculator()>=18)
+                  if(l[i].ageCalculator()>=18)
                   {
-                      seniors.Add(Containers.Player_list[i]);
+                      seniors.Add(l[i]);
                   }
                   else
                   {
-                      juniors.Add(Containers.Player_list[i]);
+                      juniors.Add(l[i]);
                   }
               }
+            textBox.Text = Containers.Player_list.Count.ToString();
+            Player omar = new Player("omar","1111111111","mmmmmm","2222","aasdasd",12,12,"33123","33333");
+            Containers.Player_list.Add(omar);
+            
+
+        }
+
+        private void ages_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void dataGrid_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

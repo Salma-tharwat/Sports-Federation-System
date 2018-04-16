@@ -11,7 +11,7 @@ namespace SFS
         string TeamName;
         // list of championships
         bool senior;
-   public     Player()
+   public  Player()
         {
             TeamName = "";
             if (ageCalculator() > 18)
@@ -24,10 +24,10 @@ namespace SFS
             }
         }
 
-        public Player(string name, string a, string d, string g, string i, bool m , float s, float b) : base(a, d, g, i, m, s, b)
+        public Player(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob, string teamname) : base(namee, date, genderr, ID, medical, sal, bon,mob)
         {
-            this.TeamName = name;
-
+            this.TeamName = teamname;
+            
         }
 
         public void set_teamname(string name)
@@ -37,6 +37,10 @@ namespace SFS
         public bool is_senior()
         {
             return this.senior;
+        }
+        public string get_teamname()
+        {
+            return TeamName;
         }
         public void display()
         {

@@ -5,13 +5,41 @@
     <Employment_ID>om98</Employment_ID>
     <Mobile_Number>022345678</Mobile_Number>
     <Gender>Male</Gender>
-    <Medical_Form>Yes</Medical_Form>
+    <Medical_Form>YES</Medical_Form>
     <Salary>3</Salary>
     <Bonus>0</Bonus>
     <Employement_Date>11/19/2020</Employement_Date>
-    <Working_Years>-2002</Working_Years>
+    <Working_Years>2002</Working_Years>
     <Date_of_birth>1/7/1998</Date_of_birth>
     <Available>Yes</Available>
-    <Department>hr</Department>
+    <Department>HR</Department>
+  </Employee>
+  <Employee>
+    <Employee_Name>Alaa</Employee_Name>
+    <Employeement_ID>Al20</Employeement_ID>
+    <Mobile_Number>9218938</Mobile_Number>
+    <Gender>Male</Gender>
+    <Medical_Form>NO</Medical_Form>
+    <Salary>300</Salary>
+    <Bonus>0</Bonus>
+    <Employement_Date>4/3/2018</Employement_Date>
+    <Working_Years>0</Working_Years>
+    <Date_of_birth>4/11/2018</Date_of_birth>
+    <Available>Yes</Available>
+    <Department>HR</Department>
+  </Employee>
+  <Employee>
+    <Employee_Name>Ramy</Employee_Name>
+    <Employeement_ID>Ra98</Employeement_ID>
+    <Mobile_Number>019299238</Mobile_Number>
+    <Gender>Male</Gender>
+    <Medical_Form>YES</Medical_Form>
+    <Salary>4000</Salary>
+    <Bonus>40</Bonus>
+    <Employement_Date>4/8/2010</Employement_Date>
+    <Working_Years>8</Working_Years>
+    <Date_of_birth>2/1/1989</Date_of_birth>
+    <Available>Yes</Available>
+    <Department>HR</Department>
   </Employee>
 </Employees>

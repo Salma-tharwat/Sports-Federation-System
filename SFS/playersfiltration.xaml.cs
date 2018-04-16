@@ -23,5 +23,12 @@ namespace SFS
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
+            this.Close();
+        }
     }
 }

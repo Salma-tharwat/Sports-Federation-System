@@ -8,7 +8,7 @@
         Title="mainqueryform" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Label x:Name="label" Content="Choose Field For Desired Query" HorizontalAlignment="Left" Height="49" Margin="0,97,0,0" VerticalAlignment="Top" Width="338" FontSize="22"/>
         <ComboBox x:Name="QueryOptions" HorizontalAlignment="Left" Height="24" Margin="33,151,0,0" VerticalAlignment="Top" Width="149" Cursor="Arrow" SelectionChanged="QueryOptions_SelectionChanged">
@@ -30,7 +30,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="93" BorderThickness="0" ClickMode="Press" Cursor="Arrow">
@@ -38,7 +38,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
     </Grid>

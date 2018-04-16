@@ -30,7 +30,15 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="ADD" Content="" HorizontalAlignment="Left" Margin="413,251,0,0" VerticalAlignment="Top" Width="79" Height="51" Click="ADD_Click" Grid.Row="4">
+        <Button x:Name="ADD" Content="" HorizontalAlignment="Left" Margin="413,251,0,0" VerticalAlignment="Top" Width="79" Height="51" Click="ADD_Click" Grid.Row="4" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.533"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.682"/>
+                </TransformGroup>
+            </Button.RenderTransform>
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>

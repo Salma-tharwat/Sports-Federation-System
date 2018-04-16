@@ -8,7 +8,7 @@
         Title="PlayersInEachTeamDG" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <DataGrid x:Name="PlayersInEachTeamdataG" HorizontalAlignment="Left" Height="208" Margin="0,79,0,0" VerticalAlignment="Top" Width="314"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="91" Click="button_Click">
@@ -16,7 +16,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

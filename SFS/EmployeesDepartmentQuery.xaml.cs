@@ -26,8 +26,24 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+             List<Employee> filter = new List<Employee>();
+
+            for(int i=0;i<Containers.Employee_list.Count();i++)
+            {
+                if(Containers.Employee_list[i].GetDepartment()==textBox.Text)
+                {
+                    filter.Add(Containers.Employee_list[i]);
+                }
+            }
             EmployeesDepartmentDataG edg = new EmployeesDepartmentDataG();
             edg.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
             this.Close();
         }
     }

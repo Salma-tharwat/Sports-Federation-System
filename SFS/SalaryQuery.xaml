@@ -8,7 +8,7 @@
         Title="SalaryQuery" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Label x:Name="label" Content="Enter Query" HorizontalAlignment="Left" Height="53" Margin="28,86,0,0" VerticalAlignment="Top" Width="195" FontSize="24"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="27" Margin="28,149,0,0" VerticalAlignment="Top" Width="128">
@@ -18,12 +18,12 @@
             <ComboBoxItem>Less than</ComboBoxItem>
             <ComboBoxItem>Equal</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="101" Margin="377,218,0,0" VerticalAlignment="Top" Width="115" Click="button_Click">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="89" Margin="396,230,0,0" VerticalAlignment="Top" Width="96" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
         <Label x:Name="label1" Content="Enter Value" HorizontalAlignment="Left" Height="34" Margin="28,194,0,0" VerticalAlignment="Top" Width="128" FontSize="22"/>
@@ -34,7 +34,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
     </Grid>

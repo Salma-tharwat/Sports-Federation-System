@@ -9,15 +9,15 @@ namespace SFS
     class Team
     {
         string Name;
-        bool senior;
+        string senior;
        // List<int>res;
 
         public Team()
         {
             Name = "";
-            senior = false;
+            senior = "";
         }
-        public Team(string N,bool s)
+        public Team(string N,string s)
         {
             Name = N;
             senior = s;
@@ -33,11 +33,11 @@ namespace SFS
         }
 
 
-        public void setage(bool Senior)
+        public void setage(string Senior)
         {
             this.senior = Senior;
         }
-        public bool getage()
+        public string getage()
         {
             return this.senior;
         }

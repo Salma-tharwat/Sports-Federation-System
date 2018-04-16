@@ -26,7 +26,7 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            /*    List<Sponsers> x =//main list;
+               List<Sponsers> x =Containers.Sponsor_list;
             for (int i = 0; i < x.Count; i++)
             {
                 for (int j = i + 1; j < x.Count; j++)
@@ -38,7 +38,7 @@ namespace SFS
                         x[j] = tmp;
                     }
                 }
-        }*/
+        }
         }
     }
 }

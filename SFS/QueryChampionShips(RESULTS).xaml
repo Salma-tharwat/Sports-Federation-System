@@ -9,7 +9,7 @@
         >
     <Grid Margin="0,0,0,-1">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Label x:Name="label" Content="ChampionShip Results" HorizontalAlignment="Left" Height="65" Margin="101,63,0,0" VerticalAlignment="Top" Width="245" FontSize="22"/>
         <RadioButton x:Name="Max_res" Content="Maximum Score" HorizontalAlignment="Left" Height="31" Margin="0,118,0,0" VerticalAlignment="Top" Width="233" FontSize="22" RenderTransformOrigin="0.502,-0.097"/>
@@ -19,16 +19,15 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <DataGrid x:Name="ResultsDataGrid" HorizontalAlignment="Left" Height="137" Margin="10,154,0,0" VerticalAlignment="Top" Width="215"/>
         <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="71" VerticalAlignment="Top" Width="96" Click="button1_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

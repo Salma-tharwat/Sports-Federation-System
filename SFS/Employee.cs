@@ -10,7 +10,7 @@ namespace SFS
     {
         int working_year;
         string Employment_date;
-        bool status;
+        string status;
         string department;
 
 
@@ -18,16 +18,18 @@ namespace SFS
         {
             working_year = 0;
             Employment_date = "";
-            status = false;
+            status = "Available";
             department = "";
             
         }
-        public Employee(string x,bool y,string z, string a, string d, string g, string i, bool m, float s, float b) :base(a,d,g,i,m,s,b)
+        public Employee(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob,int workyear,string empdate, string statue, string dep) :base(namee,date,genderr,ID,medical,sal,bon,mob)
         {
             
-            Employment_date = x;
-            status = y;
-            department = z;
+            Employment_date = empdate;
+            status = statue;
+            department = dep;
+            working_year = workyear;
+
         }
         public void setWorking_Year(int working_year)
         {
@@ -48,12 +50,12 @@ namespace SFS
         {
             return this.Employment_date;
         }
-        public void setStatus(bool status)
+        public void setStatus(string status)
         {
 
             this.status = status;
         }
-        public bool GetStatus()
+        public string GetStatus()
         {
             return this.status;
 

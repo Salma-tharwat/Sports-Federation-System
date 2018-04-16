@@ -8,25 +8,25 @@
         Title="EmploymentdurationQuery" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Label x:Name="label" Content="Enter Employment Duration Needed
                " HorizontalAlignment="Left" Height="50" Margin="0,107,0,0" VerticalAlignment="Top" Width="441" FontSize="24"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="37" Margin="0,162,0,0" TextWrapping="Wrap" Text="Number of Years" VerticalAlignment="Top" Width="205" FontSize="24"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="108" Margin="361,211,0,0" VerticalAlignment="Top" Width="131" Click="button_Click">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="90" Margin="391,229,0,0" VerticalAlignment="Top" Width="101" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="102" VerticalAlignment="Top" Width="133">
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="92" Click="button1_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

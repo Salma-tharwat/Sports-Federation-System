@@ -14,6 +14,11 @@
         <Button x:Name="button" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="157,82,0,0" BorderBrush="#FF707070" Background="{x:Null}" Foreground="#FF12808B" FontFamily="Traditional Arabic" FontSize="30" Click="button_Click"/>
         <Button x:Name="button1" Content="EDIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="131" Margin="158,144,0,0" FontFamily="Traditional Arabic" FontSize="30" Background="{x:Null}" Foreground="#FF12808B" Click="button1_Click"/>
         <Button x:Name="button2" Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="133" Margin="158,0,0,60" Foreground="#FF12808B" Background="{x:Null}" FontSize="30" FontFamily="Traditional Arabic" Click="button2_Click"/>
+        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Height="60" Margin="0,259,0,0" VerticalAlignment="Top" Width="91" BorderThickness="0" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

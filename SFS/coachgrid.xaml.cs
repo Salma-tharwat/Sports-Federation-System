@@ -26,7 +26,8 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-      /*         List<Coach> l =//main list;
+            /*
+              // List<Coach> l =Containers.Employee_list;
           for (int i = 0; i < l.Count; i++)
           {
               for (int j = i + 1; j < l.Count; j++)
@@ -38,7 +39,15 @@ namespace SFS
                       l[j] = tmp;
                   }
               }
-      }*/
+      }
+      */
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
+            this.Close();
         }
     }
 }

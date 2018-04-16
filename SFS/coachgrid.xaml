@@ -15,7 +15,7 @@
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,256,0,0" Height="55">
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,256,0,0" Height="55" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>

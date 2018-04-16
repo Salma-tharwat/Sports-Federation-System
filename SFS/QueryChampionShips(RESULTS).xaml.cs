@@ -26,7 +26,34 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            if(Max_res.IsChecked==true)
+            {
+                Championships max = new Championships();
+                int maxx_res = 0;
+                for(int i=0;i<Containers.championship_list.Count();i++)
+                {
+                    if(Containers.championship_list[i].Getresults()>=maxx_res)
+                    {
+                        maxx_res = Containers.championship_list[i].Getresults();
+                        max = Containers.championship_list[i];
+                    }
+                }
+                MessageBox.Show(max.getName() + ' ' + max.GetPlace());
+            }
+            if (Min_Res.IsChecked == true)
+            {
+                Championships min = new Championships();
+                int minn_res = 1000000;
+                for (int i = 0; i < Containers.championship_list.Count(); i++)
+                {
+                    if (Containers.championship_list[i].Getresults() <= minn_res)
+                    {
+                        minn_res = Containers.championship_list[i].Getresults();
+                        min = Containers.championship_list[i];
+                    }
+                }
+                MessageBox.Show(min.getName() + ' ' + min.GetPlace());
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

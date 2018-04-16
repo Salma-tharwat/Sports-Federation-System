@@ -42,8 +42,8 @@ namespace SFS
                 gender = "Male";
             else gender = "Female";
             if (yes.IsChecked == true)
-                med = "Yes";
-            else med = "No";
+                med = "YES";
+            else med = "NO";
             string temp = Date.Text;
             string temp2 = Name.Text;
             string id = temp2[0].ToString() + temp2[1].ToString() + temp[7].ToString() + temp[8].ToString();

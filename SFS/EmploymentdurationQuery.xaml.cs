@@ -26,9 +26,26 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            List<Employee> filtered = new List<Employee>();
+            for(int i=0;i<Containers.Employee_list.Count();i++)
+            {
+                int x = Containers.Employee_list[i].Working_year_calc();
+                if (x.ToString()==textBox.Text)
+                {
+                    filtered.Add(Containers.Employee_list[i]);
+                }
+            }
             EmployeeEmploymentDateDG dd = new EmployeeEmploymentDateDG();
             dd.Show();
             this.Close();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
+            this.Close();
+
         }
     }
 }

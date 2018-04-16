@@ -50,7 +50,7 @@ namespace SFS
                 string dval = list_2[7].InnerText;
                 string team_name = list_2[8].Name;
                 string tval = list_2[8].InnerText;
-                Player p = new Player(tval, nvalue, dval, gval, ivalue,bool.Parse(medvalue), float.Parse(sval), float.Parse(bval));
+                Player p = new Player(nvalue,dval,gval,ivalue,medvalue,float.Parse(sval),float.Parse(bval),mvalue,tval);
                 Player_list.Add(p);
             }
             w.Close();
@@ -70,27 +70,27 @@ namespace SFS
                 string nvalue = list_2[0].InnerText;
                 string ID = list_2[1].Name;
                 string ivalue = list_2[1].InnerText;
-                string mobile_number = list_2[1].Name;
-                string mvalue = list_2[1].InnerText;
-                string gender = list_2[2].Name;
-                string gval = list_2[2].InnerText;
-                string medical_form = list_2[3].Name;
-                string medvalue = list_2[3].InnerText;
-                string salary = list_2[4].Name;
-                string sval = list_2[4].InnerText;
-                string bonus = list_2[5].Name;
-                string bval = list_2[5].InnerText;
-                string Employment_date = list_2[6].Name;
-                string edval = list_2[6].InnerText;
-                string Working_year = list_2[7].Name;
-                string wval = list_2[7].InnerText;
-                string date_of_birth = list_2[8].Name;
-                string dval = list_2[8].InnerText;
-                string available = list_2[9].Name;
-                string aval = list_2[8].InnerText;
-                string department = list_2[10].Name;
-                string depval = list_2[10].InnerText;
-                Employee p = new Employee(edval, bool.Parse(aval), depval, nvalue, dval, gval, ivalue, bool.Parse(medvalue), float.Parse(sval), float.Parse(bval));
+                string mobile_number = list_2[2].Name;
+                string mvalue = list_2[2].InnerText;
+                string gender = list_2[3].Name;
+                string gval = list_2[3].InnerText;
+                string medical_form = list_2[4].Name;
+                string medvalue = list_2[4].InnerText;
+                string salary = list_2[5].Name;
+                string sval = list_2[5].InnerText;
+                string bonus = list_2[6].Name;
+                string bval = list_2[6].InnerText;
+                string Employment_date = list_2[7].Name;
+                string edval = list_2[7].InnerText;
+                string Working_year = list_2[8].Name;
+                string wval = list_2[8].InnerText;
+                string date_of_birth = list_2[9].Name;
+                string dval = list_2[9].InnerText;
+                string available = list_2[10].Name;
+                string aval = list_2[10].InnerText;
+                string department = list_2[11].Name;
+                string depval = list_2[11].InnerText;
+                Employee p = new Employee(nvalue,dval,gval,ivalue, medvalue, float.Parse(sval), float.Parse(bval),mvalue,int.Parse(wval),edval,aval,depval);
                 Employee_list.Add(p);
             }
             w.Close();
@@ -141,7 +141,7 @@ namespace SFS
                 string svalue = list_2[1].InnerText;
                 string numberofresults = list_2[2].Name;
                 string nvval = list_2[2].InnerText;
-                Championships c = new Championships(tvalue, pvalue,bool.Parse( svalue));
+                Championships c = new Championships(tvalue, pvalue,svalue);
                 championship_list.Add(c);
             }
             w.Close();
@@ -164,7 +164,7 @@ namespace SFS
                 string numberofresults = list_2[1].Name;
                 string nrvalue = list_2[1].InnerText;
                
-                Team t = new Team(nvalue,bool.Parse(svalue));
+                Team t = new Team(nvalue,svalue);
                 Team_list.Add(t);
             }
             w.Close();

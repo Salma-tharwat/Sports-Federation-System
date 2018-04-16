@@ -11,15 +11,15 @@
     </Window.Background>
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="EmployeesDepartmentDataGrid" HorizontalAlignment="Left" Height="260" Margin="0,59,0,0" VerticalAlignment="Top" Width="346"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="84">
+        <DataGrid x:Name="EmployeesDepartmentDataGrid" HorizontalAlignment="Left" Height="260" VerticalAlignment="Top" Width="346"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="84" Margin="0,265,0,-5" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

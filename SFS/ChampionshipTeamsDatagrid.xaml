@@ -8,15 +8,15 @@
         Title="ChampionshipTeamsDatagrid" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="TeamResultsDatagrid" HorizontalAlignment="Left" Height="226" Margin="10,83,0,0" VerticalAlignment="Top" Width="337"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="106" Click="button_Click">
+        <DataGrid x:Name="TeamResultsDatagrid" HorizontalAlignment="Left" Height="226" VerticalAlignment="Top" Width="337"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="106" Click="button_Click" Margin="10,231,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

@@ -9,7 +9,7 @@
         >
     <Grid Margin="0,0,0,-129">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <DataGrid x:Name="SalaryQueryDG" HorizontalAlignment="Left" Height="248" Margin="10,110,0,0" VerticalAlignment="Top" Width="284"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="86" Click="button_Click">
@@ -17,7 +17,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

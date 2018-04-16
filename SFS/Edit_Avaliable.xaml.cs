@@ -26,9 +26,9 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-           bool avail = false;
+           string avail ="";
             if (yes.IsChecked == true)
-                avail = true;
+                avail = "Available";
             if ((yes.IsChecked == true) && (no.IsChecked == true))
                 MessageBox.Show("Please fill the required information !");
 

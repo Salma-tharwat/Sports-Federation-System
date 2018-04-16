@@ -26,6 +26,14 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            List<Player> filtered = new List<Player>();
+            for(int i=0;i<Containers.Player_list.Count();i++)
+            {
+                if(Containers.Player_list[i].get_teamname()==textBox.Text)
+                {
+                    filtered.Add(Containers.Player_list[i]);
+                }
+            }
             PlayersInEachTeamDG d = new PlayersInEachTeamDG();
             d.Show();
             this.Close();

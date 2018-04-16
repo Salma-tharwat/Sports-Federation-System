@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\
 SFS
 none
 false
 DEBUG;TRACE
-\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\App.xaml
-51516324805
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\App.xaml
+52-639158684
 
-70-1871619382
-13-1643599102
-Add_Championship.xaml;Add_Club.xaml;Add_Employee.xaml;Add_Options.xaml;Add_Player.xaml;Add__Team.xaml;AGE.xaml;Bsponsor.xaml;ChampionshipTeamsDatagrid.xaml;coachgrid.xaml;Display_Championshsips.xaml;Display_Club.xaml;Display_Coaches.xaml;Display_Employee.xaml;Display_Sponsers.xaml;Dsiplay_Accounting.xaml;Edit_Avaliable.xaml;Edit_Delete.xaml;Edit_DepartmentSalaryBonus.xaml;Edit_Employee.xaml;Edit_EmployeeMedicalForm.xaml;Edit_MobileNumberEmployee.xaml;Edit_Player.xaml;Edit_PlayerMediacalForm.xaml;Edit_PlayerMobileNumber.xaml;Edit_SalaryBonus.xaml;Edit_TeamName.xaml;EmployeeEmploymentDateDG.xaml;EmployeesDepartmentDataG.xaml;EmployeesDepartmentQuery.xaml;EmploymentdurationQuery.xaml;Enter_ID.xaml;Enter_ID_Employee.xaml;mainqueryform.xaml;MainWindow.xaml;Options.xaml;placech.xaml;playersfiltration.xaml;PlayersInEachTeamDG.xaml;PlayersInEachTeamQuery.xaml;QueryChampionShips(RESULTS).xaml;SalaryQuery.xaml;SalaryQueryDataGrid.xaml;Search_Accounting.xaml;Search_Championship.xaml;Search_club.xaml;Search_coach.xaml;Search_Employee.xaml;Search_Sponser.xaml;TeamChampionShipsQuery.xaml;typech.xaml;
+711401671475
+13738642453
+Add_Championship.xaml;Add_Club.xaml;Add_Employee.xaml;Add_Options.xaml;Add_Player.xaml;Add__Team.xaml;AGE.xaml;Bsponsor.xaml;ChampionshipTeamsDatagrid.xaml;coachgrid.xaml;Display_Championshsips.xaml;Display_Club.xaml;Display_Coaches.xaml;Display_Employee.xaml;Display_Sponsers.xaml;Dsiplay_Accounting.xaml;Edit_Avaliable.xaml;Edit_Delete.xaml;Edit_DepartmentSalaryBonus.xaml;Edit_Employee.xaml;Edit_EmployeeMedicalForm.xaml;Edit_MobileNumberEmployee.xaml;Edit_Player.xaml;Edit_PlayerMediacalForm.xaml;Edit_PlayerMobileNumber.xaml;Edit_SalaryBonus.xaml;Edit_TeamName.xaml;EmployeeEmploymentDateDG.xaml;EmployeesDepartmentDataG.xaml;EmployeesDepartmentQuery.xaml;EmploymentdurationQuery.xaml;Enter_ID.xaml;Enter_ID_Employee.xaml;Loginas.xaml;mainqueryform.xaml;MainWindow.xaml;Options.xaml;placech.xaml;playersfiltration.xaml;PlayersInEachTeamDG.xaml;PlayersInEachTeamQuery.xaml;QueryChampionShips(RESULTS).xaml;SalaryQuery.xaml;SalaryQueryDataGrid.xaml;Search_Accounting.xaml;Search_Championship.xaml;Search_club.xaml;Search_coach.xaml;Search_Employee.xaml;Search_Sponser.xaml;TeamChampionShipsQuery.xaml;typech.xaml;
 
-False
+True
 

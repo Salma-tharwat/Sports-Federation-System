@@ -21,13 +21,9 @@ namespace SFS
     {
         public Options()
         {
-            InitializeComponent();
+          InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -45,6 +41,13 @@ namespace SFS
         {
             Edit_Delete ed = new Edit_Delete();
             ed.Show();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Loginas lgn = new Loginas();
+            lgn.Show();
+            this.Close();
         }
     }
 }

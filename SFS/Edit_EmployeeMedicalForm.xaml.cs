@@ -26,9 +26,9 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            bool med = false;
+            string med = "NO";
             if (yes.IsChecked == true)
-                med = true;
+                med = "YES";
             if ((yes.IsChecked == true) && (no.IsChecked == true))
                 MessageBox.Show("Please fill the required information !");
 
