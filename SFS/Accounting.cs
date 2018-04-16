@@ -16,7 +16,7 @@ namespace SFS
             expenses = 0;
             Accountant = "";
         }
-        public Accounting(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob,int workyear,string empdate, string statue, string dep,int Expenses, string accountant) :base(namee,date,genderr,ID,medical,sal,bon,mob,workyear,empdate,statue,dep)
+        public Accounting(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob,int workyear,string empdate, string statue, string dep,int Expenses, string accountant,string pass) :base(namee,date,genderr,ID,medical,sal,bon,mob,workyear,empdate,statue,dep,pass)
         {
             expenses = Expenses;
             Accountant = accountant;

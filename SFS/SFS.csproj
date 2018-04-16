@@ -56,6 +56,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Accounting.cs" />
+    <Compile Include="AccountingOptionForm.xaml.cs">
+      <DependentUpon>AccountingOptionForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Add Expense.xaml.cs">
+      <DependentUpon>Add Expense.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Add_Championship.xaml.cs">
       <DependentUpon>Add_Championship.xaml</DependentUpon>
     </Compile>
@@ -144,6 +150,9 @@
     <Compile Include="EmployeeEmploymentDateDG.xaml.cs">
       <DependentUpon>EmployeeEmploymentDateDG.xaml</DependentUpon>
     </Compile>
+    <Compile Include="employeelogin.xaml.cs">
+      <DependentUpon>employeelogin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EmployeesDepartmentDataG.xaml.cs">
       <DependentUpon>EmployeesDepartmentDataG.xaml</DependentUpon>
     </Compile>
@@ -158,6 +167,10 @@
     </Compile>
     <Compile Include="Enter_ID_Employee.xaml.cs">
       <DependentUpon>Enter_ID_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Expense.cs" />
+    <Compile Include="getExpenseMonth.xaml.cs">
+      <DependentUpon>getExpenseMonth.xaml</DependentUpon>
     </Compile>
     <Compile Include="Loginas.xaml.cs">
       <DependentUpon>Loginas.xaml</DependentUpon>
@@ -217,6 +230,14 @@
     <Compile Include="typech.xaml.cs">
       <DependentUpon>typech.xaml</DependentUpon>
     </Compile>
+    <Page Include="AccountingOptionForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add Expense.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Add_Championship.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -329,6 +350,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="employeelogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EmployeesDepartmentDataG.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -349,9 +374,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Loginas.xaml">
+    <Page Include="getExpenseMonth.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Loginas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="mainqueryform.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -522,7 +551,16 @@
     <Resource Include="Images\view.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="dfbdeb52-a232-46f8-81db-afe8a1bedebc.jpg" />
+    <Resource Include="omar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cross.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -17,7 +17,7 @@
             <RowDefinition Height="26*"/>
             <RowDefinition Height="302*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="Department" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Margin="171,209,0,0" Grid.Row="4"/>
+        <TextBox x:Name="Department" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Margin="179,231,0,0" Grid.Row="4"/>
         <TextBox x:Name="Salary" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" Margin="172,65,0,0" Grid.Row="4"/>
         <TextBox x:Name="number" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Margin="177,2,0,0" Grid.Row="2" Grid.RowSpan="2"/>
         <TextBox x:Name="Name" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Margin="179,0,0,0" Grid.Row="1"/>
@@ -46,9 +46,18 @@
                 <ImageBrush ImageSource="Add.png"/>
             </Button.Background>
         </Button>
-        <RadioButton GroupName="Avaliable" x:Name="Yes3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160,181,0,0" RenderTransformOrigin="0.167,-1.604" Grid.Row="4"/>
-        <RadioButton GroupName="Avaliable" x:Name="No3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="285,180,0,0" Grid.Row="4"/>
-        <Label x:Name="label2_Copy" Content="Date of birth:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,131,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
+        <RadioButton GroupName="Avaliable" x:Name="Yes3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,169,0,0" RenderTransformOrigin="0.167,-1.604" Grid.Row="4"/>
+        <RadioButton GroupName="Avaliable" x:Name="No3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,169,0,0" Grid.Row="4" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-38.707"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <Label x:Name="label2_Copy" Content="Date of birth:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,131,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
         <Label x:Name="label2_Copy1" Content="Mobile Number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,26,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.RowSpan="4" Grid.Row="1"/>
         <Label x:Name="label2_Copy2" Content="Gender:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,25,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.RowSpan="2" Grid.Row="3"/>
         <Label x:Name="label2_Copy3" Content="Male" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="278,24,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="3" Grid.RowSpan="2"/>
@@ -59,12 +68,14 @@
         <Label x:Name="label2_Copy8" Content="Salary:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,58,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
         <Label x:Name="label2_Copy9" Content="Employee Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,93,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="38" Width="168" Grid.Row="4"/>
         <Label x:Name="label2_Copy10" Content="Employee Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,0,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.RowSpan="4"/>
-        <Label x:Name="label2_Copy13" Content="No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="301,169,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
-        <Label x:Name="label2_Copy14" Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="174,169,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="32" Grid.Row="4"/>
+        <Label x:Name="label2_Copy13" Content="No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="301,157,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
+        <Label x:Name="label2_Copy14" Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,157,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="32" Grid.Row="4"/>
         <Label x:Name="label2_Copy15" Content="Avaliable:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,162,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
-        <Label x:Name="label2_Copy16" Content="Department:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,201,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
-        <DatePicker x:Name="Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,140,0,0" Width="169" Height="26" Grid.Row="4"/>
+        <Label x:Name="label2_Copy16" Content="Department:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,211,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
+        <DatePicker x:Name="Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,138,0,0" Width="169" Height="26" Grid.Row="4"/>
         <DatePicker x:Name="Emplyedate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="171,104,0,0" Width="169" Height="26" Grid.Row="4"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Margin="179,194,0,0" Grid.Row="4"/>
+        <Label x:Name="label2_Copy11" Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,184,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Row="4"/>
 
     </Grid>
 </Window>

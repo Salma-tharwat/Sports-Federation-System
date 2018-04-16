@@ -128,6 +128,10 @@ namespace SFS
                 document.WriteString(Department.Text);
                 document.WriteEndElement();
 
+                document.WriteStartElement("Password");
+                document.WriteString(password.Text);
+                document.WriteEndElement();
+
                 document.WriteEndElement();
                 document.WriteEndElement();
                 document.WriteEndDocument();
@@ -191,6 +195,11 @@ namespace SFS
                 XmlNode dep = doc.CreateElement("Department");
                 dep.InnerText = Department.Text;
                 employee.AppendChild(dep);
+
+                XmlNode pas = doc.CreateElement("Password");
+                pas.InnerText = password.Text;
+                employee.AppendChild(pas);
+
 
                 doc.DocumentElement.AppendChild(employee);
                 doc.Save("Employees.xml");

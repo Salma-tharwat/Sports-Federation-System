@@ -1,0 +1,50 @@
+﻿<Window x:Class="SFS.Add_Expense"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Add_Expense" Height="350" Width="500">
+    <Window.Background>
+        <ImageBrush ImageSource="backgrd.png"/>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="label" Content="Value" HorizontalAlignment="Left" Height="36" Margin="27,41,0,0" VerticalAlignment="Top" Width="164" FontSize="24"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="56,91,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="121" FontSize="22"/>
+        <ComboBox x:Name="expense_month" HorizontalAlignment="Left" Height="35" Margin="56,204,0,0" VerticalAlignment="Top" Width="149" Cursor="Arrow" FontSize="24" >
+            <ComboBoxItem>January</ComboBoxItem>
+            <ComboBoxItem>February</ComboBoxItem>
+            <ComboBoxItem>March</ComboBoxItem>
+            <ComboBoxItem>April</ComboBoxItem>
+            <ComboBoxItem>May</ComboBoxItem>
+            <ComboBoxItem>June</ComboBoxItem>
+            <ComboBoxItem>July</ComboBoxItem>
+            <ComboBoxItem>August</ComboBoxItem>
+            <ComboBoxItem>September</ComboBoxItem>
+            <ComboBoxItem>October</ComboBoxItem>
+            <ComboBoxItem>November</ComboBoxItem>
+            <ComboBoxItem>December</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="label1" Content="Month" HorizontalAlignment="Left" Height="38" Margin="27,146,0,0" VerticalAlignment="Top" Width="122" FontSize="24"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="63" Margin="405,256,0,0" VerticalAlignment="Top" Width="87" BorderThickness="0" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Add.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="63" Margin="0,256,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="-0.002,0.472" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="90" Margin="272,117,0,0" VerticalAlignment="Top" Width="210" FontSize="24">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="label2" Content="Description :" HorizontalAlignment="Left" Height="42" Margin="272,70,0,0" VerticalAlignment="Top" Width="190" FontSize="24"/>
+
+    </Grid>
+</Window>

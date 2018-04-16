@@ -12,6 +12,7 @@ namespace SFS
         string Employment_date;
         string status;
         string department;
+        string password;
 
 
         public Employee()
@@ -20,16 +21,17 @@ namespace SFS
             Employment_date = "";
             status = "Available";
             department = "";
+            password = "";
             
         }
-        public Employee(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob,int workyear,string empdate, string statue, string dep) :base(namee,date,genderr,ID,medical,sal,bon,mob)
+        public Employee(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob,int workyear,string empdate, string statue, string dep,string pass) :base(namee,date,genderr,ID,medical,sal,bon,mob)
         {
             
             Employment_date = empdate;
             status = statue;
             department = dep;
             working_year = workyear;
-
+            password = pass;
         }
         public void setWorking_Year(int working_year)
         {
@@ -68,6 +70,15 @@ namespace SFS
         {
             return this.department;
         }
+        public void setpassword(string pass)
+        {
+            this.password = pass;
+        }
+        public string Getpassword()
+        {
+            return this.password;
+        }
+        
         public int Working_year_calc()
         {
             int current_year = 2018;

@@ -63,7 +63,16 @@ namespace SFS
             textBox.Text = Containers.Player_list.Count.ToString();
             Player omar = new Player("omar","1111111111","mmmmmm","2222","aasdasd",12,12,"33123","33333");
             Containers.Player_list.Add(omar);
-            
+
+            List<int> tage = new List<int>();
+            List<string> tname = new List<string>();
+            for (int i = 0; i < l.Count; i++)
+            {
+                tage.Add(l[i].ageCalculator());
+                tname.Add(l[i].getName());
+            }
+            listBox.ItemsSource = tname;
+            listBox1.ItemsSource = tage;
 
         }
 

@@ -90,7 +90,9 @@ namespace SFS
                 string aval = list_2[10].InnerText;
                 string department = list_2[11].Name;
                 string depval = list_2[11].InnerText;
-                Employee p = new Employee(nvalue,dval,gval,ivalue, medvalue, float.Parse(sval), float.Parse(bval),mvalue,int.Parse(wval),edval,aval,depval);
+               // string password = list_2[12].Name;
+                 string pval ="";
+                Employee p = new Employee(nvalue,dval,gval,ivalue, medvalue, float.Parse(sval), float.Parse(bval),mvalue,int.Parse(wval),edval,aval,depval, pval);
                 Employee_list.Add(p);
             }
             w.Close();

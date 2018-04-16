@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Expenses>
+  <Expense>
+    <Expense_value>1500</Expense_value>
+    <Month_Given>March</Month_Given>
+    <Given_to>Nescafe</Given_to>
+  </Expense>
+</Expenses>

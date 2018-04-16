@@ -10,9 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="sfs.png"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Height="72" Margin="191,237,0,0" Background="{x:Null}" VerticalAlignment="Top" Width="128" Click="button_Click" BorderThickness="0" >
-            
-        </Button>
+        <Button Content="" HorizontalAlignment="Left" Height="58" Margin="198,239,0,0" Background="{x:Null}" VerticalAlignment="Top" Width="106" Click="button_Click" BorderThickness="0" ClickMode="Press" />
     </Grid>
 </Window>
        

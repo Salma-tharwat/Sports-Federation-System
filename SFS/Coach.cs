@@ -15,7 +15,7 @@ namespace SFS
             team = "";
           champlist = new List<Championships>();
         }
-        public Coach(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob, int workyear, string empdate, string statue, string dep, int Expenses, string accountant,string team) : base(namee, date, genderr, ID, medical, sal, bon, mob, workyear, empdate, statue, dep)
+        public Coach(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob, int workyear, string empdate, string statue, string dep, int Expenses, string accountant,string team,string pass) : base(namee, date, genderr, ID, medical, sal, bon, mob, workyear, empdate, statue, dep,pass)
         {
             this.team = team;
         }

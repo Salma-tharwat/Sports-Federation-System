@@ -34,8 +34,18 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Options o = new Options();
+            employeelogin o = new employeelogin();
             o.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            employeelogin ep = new employeelogin();
+                ep.Show();
+
+            AccountingOptionForm op = new AccountingOptionForm();
+            op.Show();
             this.Close();
         }
     }

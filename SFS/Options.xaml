@@ -7,17 +7,26 @@
         mc:Ignorable="d"
         Title="Options" Height="350" Width="500">
     <Grid>
-        
+
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Button x:Name="button" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="157,82,0,0" BorderBrush="#FF707070" Background="{x:Null}" Foreground="#FF12808B" FontFamily="Traditional Arabic" FontSize="30" Click="button_Click"/>
         <Button x:Name="button1" Content="EDIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="131" Margin="158,144,0,0" FontFamily="Traditional Arabic" FontSize="30" Background="{x:Null}" Foreground="#FF12808B" Click="button1_Click"/>
         <Button x:Name="button2" Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="133" Margin="158,0,0,60" Foreground="#FF12808B" Background="{x:Null}" FontSize="30" FontFamily="Traditional Arabic" Click="button2_Click"/>
-        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Height="60" Margin="0,259,0,0" VerticalAlignment="Top" Width="91" BorderThickness="0" Click="button3_Click">
+        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Height="76" Margin="0,243,0,0" VerticalAlignment="Top" Width="91" BorderThickness="0" Click="button3_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Queries" HorizontalAlignment="Left" Height="49" Margin="357,169,0,0" VerticalAlignment="Top" Width="125" Background="{x:Null}" FontSize="36" Foreground="#FF12808B" FontFamily="Traditional Arabic"/>
+        <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Height="84" Margin="374,225,0,0" VerticalAlignment="Top" Width="96" BorderThickness="0" Click="button4_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="questionM.png"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
         </Button>
 
     </Grid>
