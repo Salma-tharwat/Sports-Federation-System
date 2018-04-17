@@ -25,7 +25,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

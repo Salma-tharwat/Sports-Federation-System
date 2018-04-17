@@ -94,5 +94,12 @@ namespace SFS
             }
             this.Close();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Options op = new Options();
+            op.Show();
+            op.Close();
+        }
     }
 }

@@ -25,7 +25,7 @@
             <ComboBoxItem>November</ComboBoxItem>
             <ComboBoxItem>December</ComboBoxItem>
         </ComboBox>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="213" Margin="195,66,0,0" VerticalAlignment="Top" Width="136"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="213" Margin="212,67,0,0" VerticalAlignment="Top" Width="136"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="65" Margin="10,244,0,0" VerticalAlignment="Top" Width="92" BorderThickness="0" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>

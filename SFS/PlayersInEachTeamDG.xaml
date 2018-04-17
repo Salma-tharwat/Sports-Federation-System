@@ -23,9 +23,9 @@
                 <ImageBrush ImageSource="view.png"/>
             </Button.Background>
         </Button>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="230" Margin="10,79,0,0" VerticalAlignment="Top" Width="161"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="230" Margin="15,79,0,0" VerticalAlignment="Top" Width="161"/>
         <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="230" Margin="176,79,0,0" VerticalAlignment="Top" Width="150"/>
-        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="230" Margin="331,79,0,0" VerticalAlignment="Top" Width="151"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="230" Margin="326,79,0,0" VerticalAlignment="Top" Width="151"/>
 
     </Grid>
 </Window>
