@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Button x:Name="button" Content="ADD EXPENSE" HorizontalAlignment="Left" Height="56" Margin="162,76,0,0" VerticalAlignment="Top" Width="158" Background="{x:Null}" FontSize="22" Foreground="#FF12808B" BorderThickness="0" Click="button_Click"/>
-        <Button x:Name="button1" Content="GET MONTH EXPENSES" HorizontalAlignment="Left" VerticalAlignment="Top" Width="317" Margin="89,159,0,0" Height="46" Background="{x:Null}" Foreground="#FF12808B" BorderThickness="0" FontSize="22" Click="button1_Click"/>
+        <Button x:Name="button1" Content="GET MONTH EXPENSES" HorizontalAlignment="Left" VerticalAlignment="Top" Width="317" Margin="87,132,0,0" Height="46" Background="{x:Null}" Foreground="#FF12808B" BorderThickness="0" FontSize="22" Click="button1_Click" RenderTransformOrigin="0.509,-0.455"/>
         <Button x:Name="button2" Content="" HorizontalAlignment="Left" Height="56" Margin="406,253,0,0" VerticalAlignment="Top" Width="76" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="next.png"/>
@@ -22,6 +22,7 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
+        <Button x:Name="button4" Content="GET YEARLY EXPENSES " HorizontalAlignment="Left" Height="48" Margin="113,183,0,0" VerticalAlignment="Top" Width="265" Background="{x:Null}" FontSize="22" Foreground="#FF12808B" BorderThickness="0"/>
 
     </Grid>
 </Window>

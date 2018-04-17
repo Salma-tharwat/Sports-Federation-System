@@ -35,10 +35,12 @@ namespace SFS
         }
         private void button2_Click_1(object sender, RoutedEventArgs e)
         {
+            bool loggedin = false;
             for(int i=0;i<Containers.Employee_list.Count;i++)
             {
                 if(Containers.Employee_list[i].getId()== login.Text && Containers.Employee_list[i].Getpassword() == pass.Text)
                 {
+                    loggedin = true;
                     MessageBox.Show("Login Successfuly.");
                     if(Containers.Employee_list[i].GetDepartment()=="HR")
                     {
@@ -54,6 +56,7 @@ namespace SFS
                     break;
                 }
             }
+            if(!loggedin)
             MessageBox.Show("Wrong E-mail or Password!");
 
         }

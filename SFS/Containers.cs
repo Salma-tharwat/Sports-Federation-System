@@ -139,10 +139,10 @@ namespace SFS
                 string tvalue = list_2[0].InnerText;
                 string place = list_2[1].Name;
                 string pvalue = list_2[1].InnerText;
-                string senior = list_2[1].Name;
-                string svalue = list_2[1].InnerText;
-                string numberofresults = list_2[2].Name;
-                string nvval = list_2[2].InnerText;
+                string senior = list_2[2].Name;
+                string svalue = list_2[2].InnerText;
+                string numberofresults = list_2[3].Name;
+                string nvval = list_2[3].InnerText;
                 Championships c = new Championships(tvalue, pvalue,svalue);
                 championship_list.Add(c);
             }
@@ -150,7 +150,7 @@ namespace SFS
         }
         public static void Read_Teams()
         {
-            Containers.championship_list.Clear();
+            Containers.Team_list.Clear();
             XmlDocument doc = new XmlDocument();
             doc.Load("Teams.xml");
             XmlNodeList list = doc.GetElementsByTagName("Team");

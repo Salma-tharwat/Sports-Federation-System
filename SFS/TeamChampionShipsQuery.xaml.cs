@@ -28,6 +28,7 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show(Containers.championship_list.Count().ToString());
             name = comboBox.Text;
             place=textBox1.Text;
            
