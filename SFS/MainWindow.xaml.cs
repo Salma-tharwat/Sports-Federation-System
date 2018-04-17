@@ -28,9 +28,10 @@ namespace SFS
           Containers.Read_Employees();
           Containers.Read_Clubs();
           Containers.Read_Teams();
+          Expense.read_expense();
           //  AGE a = new SFS.AGE();
           //  a.Show();
-         //   mainqueryform f = new mainqueryform();
+         //  mainqueryform f = new mainqueryform();
          //   f.Show();
           //  Options o = new Options();
           //  o.Show();

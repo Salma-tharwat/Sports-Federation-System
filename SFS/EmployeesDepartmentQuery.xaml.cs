@@ -19,6 +19,7 @@ namespace SFS
     /// </summary>
     public partial class EmployeesDepartmentQuery : Window
     {
+        public static string dep = "";
         public EmployeesDepartmentQuery()
         {
             InitializeComponent();
@@ -26,15 +27,7 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-             List<Employee> filter = new List<Employee>();
-
-            for(int i=0;i<Containers.Employee_list.Count();i++)
-            {
-                if(Containers.Employee_list[i].GetDepartment()==textBox.Text)
-                {
-                    filter.Add(Containers.Employee_list[i]);
-                }
-            }
+            dep = textBox.Text;
             EmployeesDepartmentDataG edg = new EmployeesDepartmentDataG();
             edg.Show();
             this.Close();

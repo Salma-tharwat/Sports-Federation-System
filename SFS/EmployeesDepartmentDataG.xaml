@@ -13,13 +13,20 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="EmployeesDepartmentDataGrid" HorizontalAlignment="Left" Height="260" VerticalAlignment="Top" Width="346"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="84" Margin="0,265,0,-5" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="217" Margin="10,43,0,0" VerticalAlignment="Top" Width="119"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="217" VerticalAlignment="Top" Width="100" Margin="129,43,0,0"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="217" Margin="229,43,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="78" Margin="399,241,0,0" VerticalAlignment="Top" Width="93" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="view.png"/>
             </Button.Background>
         </Button>
 

@@ -5,4 +5,14 @@
     <Month_Given>March</Month_Given>
     <Given_to>Nescafe</Given_to>
   </Expense>
+  <Expense>
+    <Expense_value>2000</Expense_value>
+    <Month>April</Month>
+    <Given_to>System.Windows.Documents.FlowDocument</Given_to>
+  </Expense>
+  <Expense>
+    <Expense_value>1000</Expense_value>
+    <Month>March</Month>
+    <Given_to>System.Windows.Documents.TextSelection</Given_to>
+  </Expense>
 </Expenses>

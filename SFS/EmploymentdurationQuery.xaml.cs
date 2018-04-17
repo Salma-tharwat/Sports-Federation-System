@@ -19,6 +19,7 @@ namespace SFS
     /// </summary>
     public partial class EmploymentdurationQuery : Window
     {
+        public static string ans = "";
         public EmploymentdurationQuery()
         {
             InitializeComponent();
@@ -26,15 +27,7 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            List<Employee> filtered = new List<Employee>();
-            for(int i=0;i<Containers.Employee_list.Count();i++)
-            {
-                int x = Containers.Employee_list[i].Working_year_calc();
-                if (x.ToString()==textBox.Text)
-                {
-                    filtered.Add(Containers.Employee_list[i]);
-                }
-            }
+            ans = textBox.Text;
             EmployeeEmploymentDateDG dd = new EmployeeEmploymentDateDG();
             dd.Show();
             this.Close();

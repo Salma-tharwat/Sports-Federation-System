@@ -93,10 +93,34 @@ namespace SFS
                 gto.InnerText = taken_for;
                 expense.AppendChild(gto);
                 doc.DocumentElement.AppendChild(expense);
-                doc.Save("Employees.xml");
+                doc.Save("Expenses.xml");
 
                 
             }
         }
+        public static List<Expense> expense_list = new List<Expense>();
+        public static void read_expense()
+        {
+            expense_list.Clear();
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Expenses.xml");
+            XmlNodeList list = doc.GetElementsByTagName("Expense");
+            BinaryFormatter f = new BinaryFormatter();
+            FileStream w = new FileStream("Expenses.xml", FileMode.Open);
+            for (int i = 0; i < list.Count; i++)
+            {
+                XmlNodeList list_2 = list[i].ChildNodes;
+                string value = list_2[0].Name;
+                string v = list_2[0].InnerText;
+                string Month = list_2[1].Name;
+                string mvalue = list_2[1].InnerText;
+                string Given_to = list_2[2].Name;
+                string gtvalue = list_2[2].InnerText;
+                
+                Expense c = new Expense(int.Parse(v), mvalue,gtvalue);
+                expense_list.Add(c);
+            
+        }
+    }
     }
 }

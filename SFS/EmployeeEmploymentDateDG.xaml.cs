@@ -30,5 +30,25 @@ namespace SFS
             md.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> filtered = new List<string>();
+            List<string> filtered_dep = new List<string>();
+            List<float> filtered_salary = new List<float>();
+            for (int i = 0; i < Containers.Employee_list.Count(); i++)
+            {
+                int x = Containers.Employee_list[i].Working_year_calc();
+                if (x.ToString() == EmploymentdurationQuery.ans)
+                {
+                    filtered.Add(Containers.Employee_list[i].getName());
+                    filtered_dep.Add(Containers.Employee_list[i].GetDepartment());
+                    filtered_salary.Add(Containers.Employee_list[i].getSalary());
+                }
+            }
+            listBox.ItemsSource = filtered;
+            listBox2.ItemsSource = filtered_dep;
+            listBox2.ItemsSource = filtered_salary;
+        }
     }
 }

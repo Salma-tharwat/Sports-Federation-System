@@ -37,14 +37,8 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="90" Margin="272,117,0,0" VerticalAlignment="Top" Width="210" FontSize="24">
-            <FlowDocument>
-                <Paragraph>
-                    <Run Text="RichTextBox"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
         <Label x:Name="label2" Content="Description :" HorizontalAlignment="Left" Height="42" Margin="272,70,0,0" VerticalAlignment="Top" Width="190" FontSize="24"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="84" Margin="284,126,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="178" IsEnabled="False" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontSize="24"/>
 
     </Grid>
 </Window>

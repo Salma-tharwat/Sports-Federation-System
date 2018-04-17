@@ -10,7 +10,6 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="PlayersInEachTeamdataG" HorizontalAlignment="Left" Height="208" Margin="0,79,0,0" VerticalAlignment="Top" Width="314"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="91" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
@@ -19,6 +18,14 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="68" Margin="128,0,0,0" VerticalAlignment="Top" Width="87" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="view.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="230" Margin="10,79,0,0" VerticalAlignment="Top" Width="161"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="230" Margin="176,79,0,0" VerticalAlignment="Top" Width="150"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="230" Margin="331,79,0,0" VerticalAlignment="Top" Width="151"/>
 
     </Grid>
 </Window>
