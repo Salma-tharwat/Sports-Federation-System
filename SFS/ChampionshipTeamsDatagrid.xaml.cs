@@ -30,5 +30,27 @@ namespace SFS
             ts.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> filtered_name = new List<string>();
+            List<string> filtered_age = new List<string>();
+
+            for (int i = 0; i < Containers.championship_list.Count(); i++)
+            {
+                if (Containers.championship_list[i].getName() == TeamChampionShipsQuery.name && Containers.championship_list[i].GetPlace() == TeamChampionShipsQuery.place)
+                {
+                    for(int j=0;j<Containers.championship_list[i].teamList.Count();j++)
+                    {
+                        filtered_name.Add(Containers.championship_list[i].teamList[j].getTeam());
+                        filtered_age.Add(Containers.championship_list[i].teamList[j].getage());
+                    }
+                    
+                }
+
+            }
+            listBox.ItemsSource = filtered_name;
+            listBox1.ItemsSource = filtered_age;
+        }
     }
 }

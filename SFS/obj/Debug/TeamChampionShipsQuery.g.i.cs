@@ -51,7 +51,7 @@ namespace SFS {
         
         #line 14 "..\..\TeamChampionShipsQuery.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox textBox;
+        internal System.Windows.Controls.Label label1;
         
         #line default
         #line hidden
@@ -59,7 +59,7 @@ namespace SFS {
         
         #line 15 "..\..\TeamChampionShipsQuery.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label label1;
+        internal System.Windows.Controls.TextBox textBox1;
         
         #line default
         #line hidden
@@ -67,23 +67,23 @@ namespace SFS {
         
         #line 16 "..\..\TeamChampionShipsQuery.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox textBox1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 17 "..\..\TeamChampionShipsQuery.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button button;
         
         #line default
         #line hidden
         
         
-        #line 25 "..\..\TeamChampionShipsQuery.xaml"
+        #line 24 "..\..\TeamChampionShipsQuery.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button button1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 32 "..\..\TeamChampionShipsQuery.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ComboBox comboBox;
         
         #line default
         #line hidden
@@ -122,31 +122,31 @@ namespace SFS {
             this.label = ((System.Windows.Controls.Label)(target));
             return;
             case 2:
-            this.textBox = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 3:
             this.label1 = ((System.Windows.Controls.Label)(target));
             return;
-            case 4:
+            case 3:
             this.textBox1 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 5:
+            case 4:
             this.button = ((System.Windows.Controls.Button)(target));
             
-            #line 17 "..\..\TeamChampionShipsQuery.xaml"
+            #line 16 "..\..\TeamChampionShipsQuery.xaml"
             this.button.Click += new System.Windows.RoutedEventHandler(this.button_Click);
             
             #line default
             #line hidden
             return;
-            case 6:
+            case 5:
             this.button1 = ((System.Windows.Controls.Button)(target));
             
-            #line 25 "..\..\TeamChampionShipsQuery.xaml"
+            #line 24 "..\..\TeamChampionShipsQuery.xaml"
             this.button1.Click += new System.Windows.RoutedEventHandler(this.button1_Click);
             
             #line default
             #line hidden
+            return;
+            case 6:
+            this.comboBox = ((System.Windows.Controls.ComboBox)(target));
             return;
             }
             this._contentLoaded = true;
