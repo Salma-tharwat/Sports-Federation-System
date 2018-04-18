@@ -12,8 +12,8 @@
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Button x:Name="button" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="10,65,0,0" BorderBrush="#FF707070" Background="{x:Null}" Foreground="#FF12808B" FontFamily="Traditional Arabic" FontSize="30" Click="button_Click"/>
-        <Button x:Name="button1" Content="EDIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="357,65,0,0" FontFamily="Traditional Arabic" FontSize="30" Background="{x:Null}" Foreground="#FF12808B" Click="button1_Click"/>
-        <Button x:Name="button2" Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="141" Margin="183,0,0,155" Foreground="#FF12808B" Background="{x:Null}" FontSize="30" FontFamily="Traditional Arabic" Click="button2_Click"/>
+        <Button x:Name="button1" Content="EDIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="347,65,0,0" FontFamily="Traditional Arabic" FontSize="30" Background="{x:Null}" Foreground="#FF12808B" Click="button1_Click"/>
+        <Button x:Name="button2" Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="141" Margin="171,0,0,155" Foreground="#FF12808B" Background="{x:Null}" FontSize="30" FontFamily="Traditional Arabic" Click="button2_Click"/>
         <Button x:Name="button3" Content="" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="91" BorderThickness="0" Click="button3_Click" RenderTransformOrigin="0.583,0.933">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
@@ -34,7 +34,7 @@
             </Button.Background>
         </Button>
         <Label x:Name="label1" Content="Search         Display" HorizontalAlignment="Left" Height="60" Margin="21,169,0,0" VerticalAlignment="Top" Width="303" FontSize="36" Foreground="#FF12808B" FontFamily="Traditional Arabic"/>
-        <Button x:Name="button6" Content="" HorizontalAlignment="Left" Height="61" Margin="226,234,0,0" VerticalAlignment="Top" Width="71" BorderThickness="0">
+        <Button x:Name="button6" Content="" HorizontalAlignment="Left" Height="61" Margin="226,234,0,0" VerticalAlignment="Top" Width="71" BorderThickness="0" Click="button6_Click">
             <Button.Background>
                 <ImageBrush ImageSource="view.png"/>
             </Button.Background>

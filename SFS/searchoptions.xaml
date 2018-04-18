@@ -1,0 +1,33 @@
+﻿<Window x:Class="SFS.searchoptions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="searchoptions" Height="350" Width="500">
+    <Window.Background>
+        <ImageBrush ImageSource="backgrd.png"/>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="label" Content="Search :" HorizontalAlignment="Left" Height="45" Margin="32,34,0,0" VerticalAlignment="Top" Width="221" Foreground="#FF12808B" FontSize="36" FontFamily="Traditional Arabic"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Margin="143,106,0,0" Height="42">
+            <ComboBoxItem>Employees</ComboBoxItem>
+            <ComboBoxItem>ChampionShip</ComboBoxItem>
+            <ComboBoxItem>Coaches</ComboBoxItem>
+            <ComboBoxItem>Club</ComboBoxItem>
+            <ComboBoxItem>Sponsors</ComboBoxItem>
+            <ComboBoxItem>Players</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="68" Margin="400,251,0,0" VerticalAlignment="Top" Width="92" BorderThickness="0" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="search.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="68" Margin="10,251,0,0" VerticalAlignment="Top" Width="79" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

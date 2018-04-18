@@ -96,6 +96,9 @@
       <DependentUpon>coachgrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Containers.cs" />
+    <Compile Include="displayOptions.xaml.cs">
+      <DependentUpon>displayOptions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Display_Championshsips.xaml.cs">
       <DependentUpon>Display_Championshsips.xaml</DependentUpon>
     </Compile>
@@ -204,6 +207,9 @@
     <Compile Include="SalaryQueryDataGrid.xaml.cs">
       <DependentUpon>SalaryQueryDataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="searchoptions.xaml.cs">
+      <DependentUpon>searchoptions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Search_Accounting.xaml.cs">
       <DependentUpon>Search_Accounting.xaml</DependentUpon>
     </Compile>
@@ -275,6 +281,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="coachgrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="displayOptions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -430,6 +440,10 @@
     <Page Include="SalaryQueryDataGrid.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="searchoptions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Search_Accounting.xaml">
       <Generator>MSBuild:Compile</Generator>

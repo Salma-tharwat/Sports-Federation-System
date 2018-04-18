@@ -629,3 +629,7 @@ C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\typech.bam
 C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
 C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
 C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\searchoptions.g.cs
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\searchoptions.baml
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\displayOptions.g.cs
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\displayOptions.baml
