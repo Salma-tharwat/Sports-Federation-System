@@ -11,7 +11,8 @@
     </Window.Background>
     <Grid>
         <Label x:Name="label" Content="Search :" HorizontalAlignment="Left" Height="45" Margin="32,34,0,0" VerticalAlignment="Top" Width="221" Foreground="#FF12808B" FontSize="36" FontFamily="Traditional Arabic"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Margin="143,106,0,0" Height="42">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Margin="143,106,0,0" Height="32
+                  ">
             <ComboBoxItem>Employees</ComboBoxItem>
             <ComboBoxItem>ChampionShip</ComboBoxItem>
             <ComboBoxItem>Coaches</ComboBoxItem>
@@ -19,7 +20,7 @@
             <ComboBoxItem>Sponsors</ComboBoxItem>
             <ComboBoxItem>Players</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="68" Margin="400,251,0,0" VerticalAlignment="Top" Width="92" BorderThickness="0" Click="button_Click">
+        <Button x:Name="button" Content=""  HorizontalAlignment="Left" Height="68" Margin="400,251,0,0" VerticalAlignment="Top" Width="92" BorderThickness="0" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="search.png"/>
             </Button.Background>

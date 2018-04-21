@@ -8,10 +8,10 @@
         Title="Add_Options" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
-        <Label x:Name="label2_Copy11" Content="Add:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,85,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0"/>
-        <ComboBox x:Name="choose" Margin="124,86,64,201" SelectionChanged="choose_SelectionChanged" >
+        <Label x:Name="label2_Copy11" Content="Add:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,105,0,0" FontFamily="Traditional Arabic" FontSize="26" FontWeight="Bold" Foreground="#FF34A5B0"/>
+        <ComboBox x:Name="choose" Margin="175,112,133.333,177.333" SelectionChanged="choose_SelectionChanged" Height="32" FontSize="16" FontFamily="Traditional Arabic" >
             <ComboBoxItem>Employee</ComboBoxItem>
             <ComboBoxItem>Player</ComboBoxItem>
             <ComboBoxItem>Club</ComboBoxItem>
@@ -23,9 +23,14 @@
                 <ImageBrush ImageSource="Add.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Height="69" Margin="-2,248,0,0" Click="button_Click">
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Height="69" Margin="-2,248,0,0" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="Auto" BorderThickness="0" Click="button2_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
 

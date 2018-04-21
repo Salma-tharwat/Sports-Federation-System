@@ -30,40 +30,50 @@ namespace SFS
 
         private void QueryBotton_Click(object sender, RoutedEventArgs e)
         {
-            
+
             if (QueryOptions.Text == "Employee's Salaries")
             {
                 SalaryQuery s = new SalaryQuery();
                 s.Show();
             }
-            else if(QueryOptions.Text == "Players In Specific teams")
+            else if (QueryOptions.Text == "Search by championship name")
+            {
+                searchbyname sn = new searchbyname();
+                sn.Show();
+            }
+            else if (QueryOptions.Text == "Players Filtration")
+            {
+                playersfiltration p = new playersfiltration();
+                p.Show();
+            }
+            else if (QueryOptions.Text == "Players In Specific teams")
             {
                 PlayersInEachTeamQuery pl = new PlayersInEachTeamQuery();
                 pl.Show();
-                
+
             }
-            else if(QueryOptions.Text== "Employees in Specifc Department")
+            else if (QueryOptions.Text == "Employees in Specifc Department")
             {
                 EmployeesDepartmentQuery eq = new EmployeesDepartmentQuery();
                 eq.Show();
-               
+
             }
-            else if(QueryOptions.Text== "Employment date")
+            else if (QueryOptions.Text == "Employment date")
             {
                 EmploymentdurationQuery eq = new EmploymentdurationQuery();
                 eq.Show();
             }
-            else if(QueryOptions.Text== "ChampionShips Results")
+            else if (QueryOptions.Text == "ChampionShips Results")
             {
                 QueryChampionShips_RESULTS_ qr = new QueryChampionShips_RESULTS_();
                 qr.Show();
 
             }
-            else if(QueryOptions.Text== "Teams in Specific ChampionShip")
+            else if (QueryOptions.Text == "Teams in Specific ChampionShip")
             {
                 TeamChampionShipsQuery s = new TeamChampionShipsQuery();
                 s.Show();
-                
+
             }
 
             else if (QueryOptions.Text == "Players Age")
@@ -72,22 +82,22 @@ namespace SFS
                 s.Show();
 
             }
-            else if(QueryOptions.Text== "Coach with highest Score")
+            else if (QueryOptions.Text == "Coach with highest Score")
             {
                 coachgrid cg = new coachgrid();
                 cg.Show();
             }
-            else if(QueryOptions.Text == "Best Sponores Deal")
+            else if (QueryOptions.Text == "Best Sponores Deal")
             {
                 Bsponsor bs = new Bsponsor();
                 bs.Show();
             }
-            else if(QueryOptions.Text == "Champions in Specific Place")
+            else if (QueryOptions.Text == "Champions in Specific Place")
             {
                 placech ch = new placech();
                 ch.Show();
             }
-            else if(QueryOptions.Text == "Championship type")
+            else if (QueryOptions.Text == "Championship type")
             {
                 typech tch = new typech();
                 tch.Show();
@@ -97,9 +107,19 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Options op = new Options();
+
+            adminoptions op = new adminoptions();
             op.Show();
-            op.Close();
+            this.Close();
+
         }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
+
     }
 }
+

@@ -11,8 +11,8 @@
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Label x:Name="label" Content="Enter Team Name " HorizontalAlignment="Left" Height="51" Margin="10,80,0,0" VerticalAlignment="Top" Width="213" FontSize="22"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="33,149,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="149"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="103" Margin="381,202,0,0" VerticalAlignment="Top" Width="101" Click="button_Click">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" TextAlignment="Center" Height="32" Margin="33,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" Height="65" Margin="399,256,0,0" VerticalAlignment="Top" Width="94" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -20,7 +20,7 @@
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="91" Click="button1_Click">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="91" Click="button1_Click" Margin="0,256,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>

@@ -35,17 +35,18 @@ namespace SFS
         }
         private void button2_Click_1(object sender, RoutedEventArgs e)
         {
-            bool loggedin = false;
-            for(int i=0;i<Containers.Employee_list.Count;i++)
+            bool valid = false;
+
+        for(int i=0;i<Containers.Employee_list.Count;i++)
             {
-                if(Containers.Employee_list[i].getId()== login.Text && Containers.Employee_list[i].Getpassword() == pass.Text)
+                if(Containers.Employee_list[i].getId()== login.Text && Containers.Employee_list[i].Getpassword() == passwordBox.Password)
                 {
-                    loggedin = true;
                     MessageBox.Show("Login Successfuly.");
                     if(Containers.Employee_list[i].GetDepartment()=="HR")
                     {
-                            Options optionform = new Options();
+                        adminoptions optionform = new adminoptions();
                                  optionform.Show();
+                        this.Close();
                     }
                     else if(Containers.Employee_list[i].GetDepartment()=="Accounting")
                     {
@@ -53,18 +54,25 @@ namespace SFS
                         af.Show();
                     }
                     this.Close();
+                    valid = true; 
                     break;
                 }
             }
-            if(!loggedin)
+        if(!valid)
             MessageBox.Show("Wrong E-mail or Password!");
 
         }
 
         private void button1_Click_1(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
+            Loginas mw = new Loginas();
             mw.Show();
+            this.Close();
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
             this.Close();
         }
     }

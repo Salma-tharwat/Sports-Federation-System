@@ -13,18 +13,18 @@
             <ColumnDefinition Width="13*"/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Margin="156,121,0,0" Grid.Column="1"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Grid.ColumnSpan="2" Height="49" Click="button_Click" Margin="1,271,0,0">
+        <TextBox x:Name="Name" TextAlignment="Center"  HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Margin="156.333,119,0,0" Grid.Column="1"/>
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Grid.ColumnSpan="2" Height="42" Click="button_Click" Margin="10,266,0,0">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
         <Label x:Name="label2" Content="Club Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,115,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Label x:Name="label2_Copy" Content="Starting Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,175,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <DatePicker x:Name="starting" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="158,184,0,0" Width="153" Height="26"/>
-        <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Grid.Column="1" Margin="319,269,0,0" Click="button2_Click" Height="42">
+        <DatePicker x:Name="starting" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="156.333,180,0,0" Width="155" Height="26"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" BorderThickness="0" VerticalAlignment="Top" Width="73" Grid.Column="1" Margin="339.333,266,0,0" Click="button2_Click" Height="42">
             <Button.Background>
                 <ImageBrush ImageSource="Add.png"/>
             </Button.Background>

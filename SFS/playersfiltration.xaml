@@ -15,8 +15,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="players" HorizontalAlignment="Left" VerticalAlignment="Top" Height="221" Width="325" Margin="25.333,93,0,0" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Label x:Name="label" Content="Championship Top Players" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="287" Margin="35.333,51,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.ColumnSpan="2">
+        <Label x:Name="label" Content="Championship Top Players" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="287" Margin="37.333,66,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.ColumnSpan="2">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,16 +25,25 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" RenderTransformOrigin="5.591,11.833" Grid.Column="2" Margin="296.666,261,0,0" Height="49">
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" RenderTransformOrigin="5.591,11.833" Grid.Column="2" Margin="296.666,261,0,0" Height="49" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="10,261,0,0" Height="49" Grid.ColumnSpan="2" Click="button1_Click">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="10,261,0,0" Height="49" Grid.ColumnSpan="2" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
+        <ListBox x:Name="listBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="89" Margin="43.333,136,0,0" Grid.Column="1"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="65" Grid.Column="2" Margin="67.333,136,0,0"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="69" Grid.Column="2" Margin="131.333,136,0,0"/>
+        <ListBox x:Name="listBox3" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="71" Grid.Column="2" Margin="199.333,136,0,0"/>
+        <Label x:Name="name" Content="Name" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61.333,111,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="result" Content="Results" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71.333,111,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="2"/>
+        <Label x:Name="age" Content="Age" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,111,185.333,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="2"/>
+        <Label x:Name="gender" Content="Gender" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203.333,110,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="2"/>
 
     </Grid>
 </Window>

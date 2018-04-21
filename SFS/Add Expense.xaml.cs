@@ -33,9 +33,14 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Expense ex = new Expense(int.Parse(textBox.Text), expense_month.Text, textBlock.Text);
+            Expense ex = new Expense(int.Parse(textBox.Text), expense_month.Text, textBox1.Text);
             ex.write_expense();
             MessageBox.Show("Expense Successfully Added !");
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

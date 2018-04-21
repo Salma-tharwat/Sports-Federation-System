@@ -51,5 +51,11 @@ namespace SFS
             listBox1.ItemsSource = filtered_dep;
             listBox2.ItemsSource = filtered_salary;
         }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
     }
 }

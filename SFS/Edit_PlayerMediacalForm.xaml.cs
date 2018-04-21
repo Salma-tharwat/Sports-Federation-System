@@ -11,7 +11,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 namespace SFS
 {
     /// <summary>
@@ -33,6 +38,7 @@ namespace SFS
         {
             Edit_Player ep = new Edit_Player();
             ep.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -54,13 +60,30 @@ namespace SFS
                     }
 
                 }
-                MessageBox.Show("Done Changes");
+                if (File.Exists("Players.xml"))
+                {
+                    File.Delete("Players.xml");
+                }
+
+                for (int i = 0; i < Containers.Player_list.Count; i++)
+                {
+                    Containers.write_Player(Containers.Player_list[i]);
+
+                }
+                MessageBox.Show("Changes Done");
+                this.Hide();
             }
 
 
+ 
 
-
-            MessageBox.Show("Done Change");
+            
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

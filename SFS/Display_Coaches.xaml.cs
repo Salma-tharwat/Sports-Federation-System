@@ -29,5 +29,10 @@ namespace SFS
             Search_coach z = new Search_coach();
             z.Show();
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

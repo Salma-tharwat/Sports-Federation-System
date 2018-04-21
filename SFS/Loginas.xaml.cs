@@ -48,5 +48,12 @@ namespace SFS
             op.Show();
             this.Close();
         }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminlogin a = new adminlogin();
+            a.Show();
+            this.Close();
+        }
     }
 }

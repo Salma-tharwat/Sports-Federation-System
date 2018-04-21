@@ -1,18 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Expenses>
   <Expense>
-    <Expense_value>1500</Expense_value>
+    <Expense_value>1000</Expense_value>
     <Month_Given>March</Month_Given>
-    <Given_to>Nescafe</Given_to>
+    <Given_to>mentainance</Given_to>
   </Expense>
   <Expense>
     <Expense_value>2000</Expense_value>
-    <Month>April</Month>
-    <Given_to>System.Windows.Documents.FlowDocument</Given_to>
-  </Expense>
-  <Expense>
-    <Expense_value>1000</Expense_value>
-    <Month>March</Month>
-    <Given_to>System.Windows.Documents.TextSelection</Given_to>
+    <Month>January</Month>
+    <Given_to>food</Given_to>
   </Expense>
 </Expenses>

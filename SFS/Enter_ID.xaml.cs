@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,6 +8,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 
 namespace SFS
 {
@@ -28,20 +31,42 @@ namespace SFS
 
         private void delete_Click(object sender, RoutedEventArgs e)
         {
-           /* for(int i=0;i<players.count;i++)
+           
+            bool find = false;
+            for (int i = 0; i < Containers.Player_list.Count; i++)
             {
-                if(players[i].ID==id.Text)
+                if (Containers.Player_list[i].getId() == id.Text)
                 {
-                    players.remove(players[i]);
+                    Containers.Player_list.Remove(Containers.Player_list[i]);
+                    find = true;
                 }
-            }*/
-            MessageBox.Show("Successfuly Deleted");
+            }
+            if (find == false)
+            {
+                MessageBox.Show("Wrong ID");
+            }
+            else
+            {
+                if (File.Exists("Players.xml"))
+                {
+                    File.Delete("Players.xml");
+                }
+
+                for (int i = 0; i < Containers.Player_list.Count; i++)
+                {
+                    Containers.write_Player(Containers.Player_list[i]);
+
+                }
+                
+                MessageBox.Show("Successfuly Deleted");
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Edit_Delete ed = new Edit_Delete();
-            ed.Show();
+            adminoptions oo = new adminoptions();
+            oo.Show();
+            this.Close();
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -49,6 +74,12 @@ namespace SFS
               playerid=id.Text;
         Edit_Player p=new Edit_Player();
             p.Show();
+        }
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

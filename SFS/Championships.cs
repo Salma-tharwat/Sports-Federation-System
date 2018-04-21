@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,26 +8,33 @@ namespace SFS
 {
     class Championships
     {
-        string Name;
+       string Name;
         string place;
         string type;
         string senior;
-        public List<Team> teamList;
         int results;
         public Championships()
         {
             Name = "";
             place = "";
-            teamList = new List<Team>();
+            type = "";
             results = 0;
            
         }
-        public Championships(string placee,string Type,string sn)
+        public Championships(string placee,string Type,string sn,string name)
         {
+            Name = name;
             place = placee;
             type = Type;
             senior = sn;
             
+        }
+        public Championships(string type, string place, int result, string name)
+        {
+            this.type = type;
+            this.place = place;
+            this.results = result;
+            this.Name = name;
         }
         public void setPlace(string place)
         {
@@ -37,22 +44,41 @@ namespace SFS
         {
             this.Name = n;
         }
+        public void Setresults(int results)
+        {
+            this.results = results;
+        }
         public string getName()
         {
             return this.Name;
         }
+        
         public string GetPlace()
         {
             return this.place;
         }
-        public void setresults(int results)
-        {
-            this.results = results;
-        }
+
         public int Getresults()
         {
             return this.results;
         }
 
+
+        public void Settype(string type)
+        {
+            this.type = type;
+        }
+        public string Gettype()
+        {
+            return this.type;
+        }
+        public void setSenior(string senior)
+        {
+            this.senior = senior;
+        }
+        public string getSenior()
+        {
+            return this.senior;
+        }
     }
 }

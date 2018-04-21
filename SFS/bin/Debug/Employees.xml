@@ -1,153 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Employees>
   <Employee>
-    <Employee_Name>Mohamed</Employee_Name>
-    <Employment_ID>Mo89</Employment_ID>
-    <Mobile_Number>0101020233</Mobile_Number>
+    <Employee_Name>amr</Employee_Name>
+    <Employment_ID>am99</Employment_ID>
+    <Mobile_Number>0174839382982</Mobile_Number>
     <Gender>Male</Gender>
-    <Medical_Form>NO</Medical_Form>
-    <Salary>3000</Salary>
-    <Bonus>30</Bonus>
-    <Employement_Date>4/16/2010</Employement_Date>
-    <Working_Years>8</Working_Years>
-    <Date_of_birth>4/1/1989</Date_of_birth>
+    <Medical_Form>Male</Medical_Form>
+    <Salary>2000</Salary>
+    <Bonus>20</Bonus>
+    <Employement_Date>4/3/2012</Employement_Date>
+    <Working_Years>4</Working_Years>
+    <Date_of_birth>4/2/1999</Date_of_birth>
     <Available>Yes</Available>
     <Department>HR</Department>
-    <Password>90000</Password>
+    <Password>amr</Password>
   </Employee>
   <Employee>
-    <Employee_Name>Ahmed</Employee_Name>
-    <Employeement_ID>Ah99</Employeement_ID>
-    <Mobile_Number>0101020233</Mobile_Number>
-    <Gender>Male</Gender>
-    <Medical_Form>NO</Medical_Form>
-    <Salary>5000</Salary>
+    <Employee_Name>Rana</Employee_Name>
+    <Employeement_ID>Ra15</Employeement_ID>
+    <Mobile_Number>011442826363</Mobile_Number>
+    <Gender>Female</Gender>
+    <Medical_Form>YES</Medical_Form>
+    <Salary>2000</Salary>
     <Bonus>0</Bonus>
-    <Employement_Date>6/17/2014</Employement_Date>
-    <Working_Years>4</Working_Years>
-    <Date_of_birth>2/1/1999</Date_of_birth>
-    <Available>No</Available>
-    <Department>Coach</Department>
-    <Password>9000</Password>
+    <Employement_Date>7/18/1995</Employement_Date>
+    <Working_Years>-977</Working_Years>
+    <Date_of_birth>6/9/2015</Date_of_birth>
+    <Available>Yes</Available>
+    <Department>HR</Department>
+    <Password>rana</Password>
   </Employee>
   <Employee>
-    <Employee_Name>Ahmed</Employee_Name>
-    <Employeement_ID>Ah99</Employeement_ID>
-    <Mobile_Number>0101020233</Mobile_Number>
+    <Employee_Name>omar</Employee_Name>
+    <Employeement_ID>om99</Employeement_ID>
+    <Mobile_Number>01163528263</Mobile_Number>
     <Gender>Male</Gender>
-    <Medical_Form>NO</Medical_Form>
-    <Salary>5000</Salary>
+    <Medical_Form>YES</Medical_Form>
+    <Salary>3000</Salary>
     <Bonus>0</Bonus>
-    <Employement_Date>6/17/2014</Employement_Date>
-    <Working_Years>4</Working_Years>
-    <Date_of_birth>2/1/1999</Date_of_birth>
-    <Available>No</Available>
-    <Department>Coach</Department>
-    <Password>9000</Password>
+    <Employement_Date>12/14/2012</Employement_Date>
+    <Working_Years>-1994</Working_Years>
+    <Date_of_birth>2/19/1993</Date_of_birth>
+    <Available>Yes</Available>
+    <Department>HR</Department>
+    <Password>omar</Password>
   </Employee>
   <Employee>
-    <Employee_Name>Karim</Employee_Name>
-    <Employeement_ID>Ka91</Employeement_ID>
-    <Mobile_Number>01089789</Mobile_Number>
+    <Employee_Name>Zeina</Employee_Name>
+    <Employeement_ID>Ze97</Employeement_ID>
+    <Mobile_Number>0111234567</Mobile_Number>
+    <Gender>Female</Gender>
+    <Medical_Form>NO</Medical_Form>
+    <Salary>500</Salary>
+    <Bonus>0</Bonus>
+    <Employement_Date>7/21/2011</Employement_Date>
+    <Working_Years>7</Working_Years>
+    <Date_of_birth>12/8/1975</Date_of_birth>
+    <Available>No</Available>
+    <Department>HR</Department>
+    <Password>zeina</Password>
+  </Employee>
+  <Employee>
+    <Employee_Name>Amgad</Employee_Name>
+    <Employeement_ID>Am99</Employeement_ID>
+    <Mobile_Number>0142528151</Mobile_Number>
     <Gender>Male</Gender>
     <Medical_Form>NO</Medical_Form>
     <Salary>2000</Salary>
-    <Bonus>20</Bonus>
-    <Employement_Date>4/16/2009</Employement_Date>
-    <Working_Years>9</Working_Years>
-    <Date_of_birth>3/8/1991</Date_of_birth>
+    <Bonus>0</Bonus>
+    <Employement_Date>5/1/2013</Employement_Date>
+    <Working_Years>5</Working_Years>
+    <Date_of_birth>10/9/1990</Date_of_birth>
     <Available>Yes</Available>
     <Department>HR</Department>
-    <Password>2000</Password>
+    <Password>amgad</Password>
   </Employee>
   <Employee>
-    <Employee_Name>Mostafa</Employee_Name>
-    <Employeement_ID>Mo94</Employeement_ID>
-    <Mobile_Number>010567890</Mobile_Number>
+    <Employee_Name>Islam Mohsen</Employee_Name>
+    <Employeement_ID>Is99</Employeement_ID>
+    <Mobile_Number>01115372818</Mobile_Number>
     <Gender>Male</Gender>
     <Medical_Form>NO</Medical_Form>
-    <Salary>3000</Salary>
+    <Salary>20</Salary>
     <Bonus>0</Bonus>
-    <Employement_Date>6/3/2014</Employement_Date>
-    <Working_Years>4</Working_Years>
-    <Date_of_birth>4/1/1994</Date_of_birth>
+    <Employement_Date>10/8/2017</Employement_Date>
+    <Working_Years>1</Working_Years>
+    <Date_of_birth>5/29/1998</Date_of_birth>
     <Available>Yes</Available>
-    <Department>Coach</Department>
-    <Password>0101</Password>
+    <Department>Accounting</Department>
+    <Password>mohsen</Password>
   </Employee>
   <Employee>
-    <Employee_Name>Sarah</Employee_Name>
-    <Employeement_ID>Sa01</Employeement_ID>
-    <Mobile_Number>01987636382</Mobile_Number>
+    <Employee_Name>nour</Employee_Name>
+    <Employeement_ID>no90</Employeement_ID>
+    <Mobile_Number>01022722788</Mobile_Number>
     <Gender>Female</Gender>
     <Medical_Form>YES</Medical_Form>
-    <Salary>3000</Salary>
+    <Salary>100</Salary>
     <Bonus>0</Bonus>
-    <Employement_Date>1/30/2018</Employement_Date>
+    <Employement_Date>4/20/2018</Employement_Date>
     <Working_Years>0</Working_Years>
-    <Date_of_birth>4/16/2014</Date_of_birth>
+    <Date_of_birth>3/9/1990</Date_of_birth>
     <Available>Yes</Available>
-    <Department>Coach</Department>
-    <Password>4000</Password>
+    <Department>HR</Department>
+    <Password>10001</Password>
   </Employee>
   <Employee>
-    <Employee_Name>Farah</Employee_Name>
-    <Employeement_ID>Fa99</Employeement_ID>
-    <Mobile_Number>08178334</Mobile_Number>
+    <Employee_Name>Talia</Employee_Name>
+    <Employeement_ID>Ta99</Employeement_ID>
+    <Mobile_Number>01203836898</Mobile_Number>
     <Gender>Female</Gender>
     <Medical_Form>YES</Medical_Form>
-    <Salary>3000</Salary>
-    <Bonus>30</Bonus>
-    <Employement_Date>4/17/2010</Employement_Date>
-    <Working_Years>8</Working_Years>
-    <Date_of_birth>4/1/1999</Date_of_birth>
-    <Available>No</Available>
-    <Department>Coach</Department>
-    <Password>8000</Password>
-  </Employee>
-  <Employee>
-    <Employee_Name>tara</Employee_Name>
-    <Employeement_ID>ta01</Employeement_ID>
-    <Mobile_Number>010736784687432</Mobile_Number>
-    <Gender>Female</Gender>
-    <Medical_Form>YES</Medical_Form>
-    <Salary>2333</Salary>
+    <Salary>1000</Salary>
     <Bonus>0</Bonus>
-    <Employement_Date>4/10/2018</Employement_Date>
+    <Employement_Date>4/21/2018</Employement_Date>
     <Working_Years>0</Working_Years>
-    <Date_of_birth>4/11/2018</Date_of_birth>
-    <Available>No</Available>
-    <Department>Coach</Department>
-    <Password>555566</Password>
-  </Employee>
-  <Employee>
-    <Employee_Name>Mai</Employee_Name>
-    <Employeement_ID>Ma01</Employeement_ID>
-    <Mobile_Number>01000101001010</Mobile_Number>
-    <Gender>Female</Gender>
-    <Medical_Form>YES</Medical_Form>
-    <Salary>22121</Salary>
-    <Bonus>0</Bonus>
-    <Employement_Date>3/28/2018</Employement_Date>
-    <Working_Years>0</Working_Years>
-    <Date_of_birth>3/27/2018</Date_of_birth>
+    <Date_of_birth>4/11/1996</Date_of_birth>
     <Available>Yes</Available>
-    <Department>Coach</Department>
-    <Password>123123</Password>
-  </Employee>
-  <Employee>
-    <Employee_Name>karma</Employee_Name>
-    <Employeement_ID>ka01</Employeement_ID>
-    <Mobile_Number>29938984</Mobile_Number>
-    <Gender>Female</Gender>
-    <Medical_Form>YES</Medical_Form>
-    <Salary>6666</Salary>
-    <Bonus>0</Bonus>
-    <Employement_Date>3/27/2018</Employement_Date>
-    <Working_Years>0</Working_Years>
-    <Date_of_birth>3/25/2018</Date_of_birth>
-    <Available>Yes</Available>
-    <Department>Coach</Department>
-    <Password>7000</Password>
+    <Department>Accounting</Department>
+    <Password>1000</Password>
   </Employee>
 </Employees>

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,7 +8,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 namespace SFS
 {
     /// <summary>
@@ -42,8 +44,18 @@ namespace SFS
                     }
 
                 }
-                
-                MessageBox.Show("Done Changes");
+                if (File.Exists("Employees.xml"))
+                {
+                    File.Delete("Employees.xml");
+                }
+
+                for (int i = 0; i < Containers.Employee_list.Count; i++)
+                {
+                    Containers.write_Employee(Containers.Employee_list[i]);
+
+                }
+                MessageBox.Show("Changes Done");
+                this.Hide();
             }
 
 
@@ -56,6 +68,13 @@ namespace SFS
         {
             Edit_Employee oo = new Edit_Employee();
             oo.Show();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

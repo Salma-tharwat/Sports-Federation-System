@@ -10,14 +10,14 @@
         <ImageBrush ImageSource="backgrd.png"/>
     </Window.Background>
     <Grid>
-        <Label x:Name="label" Content="HR Member" HorizontalAlignment="Left" Height="48" Margin="41,73,0,0" VerticalAlignment="Top" Width="212" FontSize="22"/>
-        <Label x:Name="label1" Content="Accounting Member" HorizontalAlignment="Left" Height="46" Margin="41,147,0,0" VerticalAlignment="Top" Width="212" FontSize="22"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="48" Margin="28,73,0,0" VerticalAlignment="Top" Width="161" BorderThickness="0" Click="button_Click" FontSize="22">
+        <Label x:Name="label" Content="HR Member" HorizontalAlignment="Left" Height="48" Margin="161,145,0,0" VerticalAlignment="Top" Width="161" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Accounting Member" HorizontalAlignment="Left" Height="46" Margin="123,193,0,0" VerticalAlignment="Top" Width="212" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="48" Margin="161,145,0,0" VerticalAlignment="Top" Width="161" BorderThickness="0" Click="button_Click" FontSize="22" FontFamily="Traditional Arabic">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="57" Margin="28,147,0,0" VerticalAlignment="Top" Width="225" BorderThickness="0" Click="button1_Click">
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="57" Margin="140,193,0,0" VerticalAlignment="Top" Width="225" BorderThickness="0" Click="button1_Click">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
@@ -26,6 +26,15 @@
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
+        </Button>
+        <Button x:Name="button3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" FontSize="22" Height="55" Margin="161,85,0,0" Click="button3_Click" FontWeight="Normal">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Label x:Name="label_Copy" Content="Admin" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="80" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold" RenderTransformOrigin="1.592,1.682"/>
         </Button>
     </Grid>
 </Window>

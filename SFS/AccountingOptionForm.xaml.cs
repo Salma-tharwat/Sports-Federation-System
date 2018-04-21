@@ -45,5 +45,12 @@ namespace SFS
             this.Close();
 
         }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            yearlyincome_statement yi = new yearlyincome_statement();
+            yi.Show();
+            this.Close();
+        }
     }
 }

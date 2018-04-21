@@ -60,19 +60,39 @@ namespace SFS
                       juniors.Add(l[i]);
                   }
               }
-            textBox.Text = Containers.Player_list.Count.ToString();
-            Player omar = new Player("omar","1111111111","mmmmmm","2222","aasdasd",12,12,"33123","33333");
-            Containers.Player_list.Add(omar);
-
             List<int> tage = new List<int>();
             List<string> tname = new List<string>();
-            for (int i = 0; i < l.Count; i++)
+            List<string> ttname = new List<string>();
+            if (age1.Text == "")
             {
-                tage.Add(l[i].ageCalculator());
-                tname.Add(l[i].getName());
+                MessageBox.Show("Please select a choice !");
+            }
+              else  if (age1.Text == "SENIOR")
+            {
+
+                for (int i = 0; i < seniors.Count; i++)
+                {
+                    tage.Add(seniors[i].ageCalculator());
+                    tname.Add(seniors[i].getName());
+                    ttname.Add(seniors[i].get_teamname());
+
+                }
+
+            }
+            else
+            {
+                for (int i = 0; i < juniors.Count; i++)
+                {
+                    tage.Add(juniors[i].ageCalculator());
+                    tname.Add(juniors[i].getName());
+                    ttname.Add(juniors[i].get_teamname());
+
+                }
             }
             listBox.ItemsSource = tname;
-            listBox1.ItemsSource = tage;
+                listBox1.ItemsSource = tage;
+            listBox2.ItemsSource = ttname;
+
 
         }
 
@@ -95,6 +115,16 @@ namespace SFS
         {
 
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+
+        }
+    
     }
 }
 

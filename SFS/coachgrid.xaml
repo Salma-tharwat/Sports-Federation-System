@@ -6,22 +6,30 @@
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
         Title="coachgrid" Height="350" Width="500">
-    <Grid>
+    <Grid Margin="0,0,0.333,0.333">
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="408,256,0,0" Height="54" RenderTransformOrigin="5.938,0.383" Click="button_Click">
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="408,256,0,0" Height="54" RenderTransformOrigin="5.938,0.383" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,256,0,0" Height="55" Click="button1_Click">
+        <Button x:Name="button1"  BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="10,256,0,0" Height="54" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label" Content="Coach" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="87" Margin="188,63,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
-        <DataGrid x:Name="coach" HorizontalAlignment="Left" VerticalAlignment="Top" Height="193" Width="281" Margin="104,105,0,0"/>
+        <Label x:Name="label" Content="Coach" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="87" Margin="188,38,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="192" VerticalAlignment="Top" Width="91" Margin="146,118,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="192" VerticalAlignment="Top" Width="79" Margin="236,118,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <Label x:Name="name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="141,92,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="results" Content="Results" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,92,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="exit" Content="" HorizontalAlignment="Left" Width="30" Height="Auto" BorderThickness="0" Margin="0,0,0,294" Click="button1_Click" RenderTransformOrigin="0.5,0.506">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

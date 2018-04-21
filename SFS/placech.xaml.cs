@@ -26,23 +26,37 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-        /*    List<Championships> l =//main list;
-            for (int i = 0; i < l.Count; i++)
+            
+            List<Championships> l = Containers.championship_list;
+            List<string> ttype = new List<string>();
+            List<string> tplace = new List<string>();
+
+            for (int i = 0; i < Containers.championship_list.Count; i++)
             {
-                    if (l[i].GetPlace() == textBox.Text )
-                    {
-                        Championships temp = l[i];
-                    l[i] = temp;
-                       
-                    }
-                } */
+                if (l[i].GetPlace() == textBox.Text)
+                {
+                    ttype.Add(l[i].Gettype());
+                    tplace.Add(l[i].GetPlace());
+
+                }
             }
 
+            listBox.ItemsSource = ttype;
+            listBox1.ItemsSource = tplace;
+
+        }
+        
+           
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             mainqueryform mq = new mainqueryform();
             mq.Show();
             this.Close();
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }

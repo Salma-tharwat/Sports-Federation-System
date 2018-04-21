@@ -81,10 +81,11 @@ namespace SFS
         
         public int Working_year_calc()
         {
-            int current_year = 2018;
-            int years;
-            years= current_year - working_year;
-            return years;
+            DateTime doe = Convert.ToDateTime(Employment_date);
+            var today = DateTime.Today;
+            var wk = today.Year - doe.Year;
+            if (doe > today.AddYears(-wk)) wk--;
+            return int.Parse(wk.ToString());
         }
  
     }

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sponsers>
+  <Sponser>
+    <Sponser_name>Pepsi</Sponser_name>
+    <Sponsor_price>10000</Sponsor_price>
+  </Sponser>
+<Sponser>
+    <Sponser_name>Vodafone</Sponser_name>
+    <Sponsor_price>200000</Sponsor_price>
+  </Sponser>
+<Sponser>
+    <Sponser_name>Etisalat</Sponser_name>
+    <Sponsor_price>30000</Sponsor_price>
+  </Sponser>
+<Sponser>
+    <Sponser_name>Orange</Sponser_name>
+    <Sponsor_price>500000</Sponsor_price>
+  </Sponser>
+<Sponser>
+    <Sponser_name>CocaCola</Sponser_name>
+    <Sponsor_price>25000</Sponsor_price>
+  </Sponser>
+</Sponsers>

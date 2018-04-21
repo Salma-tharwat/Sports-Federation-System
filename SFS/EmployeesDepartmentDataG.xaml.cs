@@ -49,5 +49,11 @@ namespace SFS
             listBox1.ItemsSource = filter_salary;
             listBox2.ItemsSource = filter_mob;    
         }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
     }
 }

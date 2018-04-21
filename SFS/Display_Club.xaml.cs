@@ -28,7 +28,13 @@ namespace SFS
         {
             Search_club b = new Search_club();
             b.Show();
+           
 
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

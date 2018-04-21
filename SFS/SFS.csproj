@@ -35,6 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf">
+      <HintPath>..\packages\MaterialDesignThemes.2.4.0.1044\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -77,8 +85,18 @@
     <Compile Include="Add_Player.xaml.cs">
       <DependentUpon>Add_Player.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Add_PlayerResults.xaml.cs">
+      <DependentUpon>Add_PlayerResults.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Add__Team.xaml.cs">
       <DependentUpon>Add__Team.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs" />
+    <Compile Include="adminlogin.xaml.cs">
+      <DependentUpon>adminlogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="adminoptions.xaml.cs">
+      <DependentUpon>adminoptions.xaml</DependentUpon>
     </Compile>
     <Compile Include="AGE.xaml.cs">
       <DependentUpon>AGE.xaml</DependentUpon>
@@ -87,9 +105,6 @@
       <DependentUpon>Bsponsor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Championships.cs" />
-    <Compile Include="ChampionshipTeamsDatagrid.xaml.cs">
-      <DependentUpon>ChampionshipTeamsDatagrid.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Club.cs" />
     <Compile Include="Coach.cs" />
     <Compile Include="coachgrid.xaml.cs">
@@ -120,9 +135,6 @@
     <Compile Include="Edit_Avaliable.xaml.cs">
       <DependentUpon>Edit_Avaliable.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Edit_Delete.xaml.cs">
-      <DependentUpon>Edit_Delete.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Edit_DepartmentSalaryBonus.xaml.cs">
       <DependentUpon>Edit_DepartmentSalaryBonus.xaml</DependentUpon>
     </Compile>
@@ -131,6 +143,9 @@
     </Compile>
     <Compile Include="Edit_EmployeeMedicalForm.xaml.cs">
       <DependentUpon>Edit_EmployeeMedicalForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_EmployeePassword.xaml.cs">
+      <DependentUpon>Edit_EmployeePassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit_MobileNumberEmployee.xaml.cs">
       <DependentUpon>Edit_MobileNumberEmployee.xaml</DependentUpon>
@@ -143,9 +158,6 @@
     </Compile>
     <Compile Include="Edit_PlayerMobileNumber.xaml.cs">
       <DependentUpon>Edit_PlayerMobileNumber.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Edit_SalaryBonus.xaml.cs">
-      <DependentUpon>Edit_SalaryBonus.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit_TeamName.xaml.cs">
       <DependentUpon>Edit_TeamName.xaml</DependentUpon>
@@ -182,9 +194,6 @@
       <DependentUpon>mainqueryform.xaml</DependentUpon>
     </Compile>
     <Compile Include="Managers.cs" />
-    <Compile Include="Options.xaml.cs">
-      <DependentUpon>Options.xaml</DependentUpon>
-    </Compile>
     <Compile Include="placech.xaml.cs">
       <DependentUpon>placech.xaml</DependentUpon>
     </Compile>
@@ -206,6 +215,9 @@
     </Compile>
     <Compile Include="SalaryQueryDataGrid.xaml.cs">
       <DependentUpon>SalaryQueryDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="searchbyname.xaml.cs">
+      <DependentUpon>searchbyname.xaml</DependentUpon>
     </Compile>
     <Compile Include="searchoptions.xaml.cs">
       <DependentUpon>searchoptions.xaml</DependentUpon>
@@ -233,16 +245,22 @@
     <Compile Include="TeamChampionShipsQuery.xaml.cs">
       <DependentUpon>TeamChampionShipsQuery.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeamPlayers.xaml.cs">
+      <DependentUpon>TeamPlayers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="typech.xaml.cs">
       <DependentUpon>typech.xaml</DependentUpon>
     </Compile>
+    <Compile Include="yearlyincome_statement.xaml.cs">
+      <DependentUpon>yearlyincome_statement.xaml</DependentUpon>
+    </Compile>
     <Page Include="AccountingOptionForm.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Add Expense.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Add_Championship.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -264,9 +282,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Add_PlayerResults.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Add__Team.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="adminlogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="adminoptions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AGE.xaml">
       <SubType>Designer</SubType>
@@ -276,17 +306,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ChampionshipTeamsDatagrid.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="coachgrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="displayOptions.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Display_Championshsips.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -316,10 +342,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Edit_Delete.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Edit_DepartmentSalaryBonus.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -331,6 +353,10 @@
     <Page Include="Edit_EmployeeMedicalForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit_EmployeePassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Edit_MobileNumberEmployee.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -345,10 +371,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_PlayerMobileNumber.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Edit_SalaryBonus.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -385,8 +407,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="getExpenseMonth.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Loginas.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -409,10 +431,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Options.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="placech.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -441,9 +459,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="searchoptions.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="searchbyname.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="searchoptions.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Search_Accounting.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -473,7 +495,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TeamPlayers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="typech.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="yearlyincome_statement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -502,6 +532,7 @@
     <None Include="Images\questionM.png.zip" />
     <None Include="Images\questionM.png~HEAD" />
     <None Include="Images\Thumbs.db" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -521,7 +552,9 @@
     <Resource Include="questionM.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Championships.xml" />
+    <Resource Include="Championships.xml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Employees.xml" />
@@ -571,10 +604,22 @@
     <Resource Include="next.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="cross.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="view.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="cross.png" />
+    <Resource Include="sports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wrongg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="new.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

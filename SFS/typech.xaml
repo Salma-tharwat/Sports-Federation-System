@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <ComboBox x:Name="type" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="260,64,0,0" FontSize="18" FontFamily="Traditional Arabic" Height="25">
+        <ComboBox x:Name="typee" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="260,64,0,0" FontSize="18" FontFamily="Traditional Arabic" Height="25">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -23,17 +23,24 @@
             <ComboBoxItem Content="NON-OFFICIAL"/>
         </ComboBox>
         <Label x:Name="label" Content="Type Of Championship:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="251" Margin="4,56,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
-        <DataGrid x:Name="type1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="206" Width="281" Margin="105,102,0,0"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="404,257,0,0" Height="51">
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="404,257,0,0" Height="51" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,257,0,0" Height="51" Click="button1_Click">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,257,0,0" Height="51" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="174" VerticalAlignment="Top" Width="83" Margin="108,125,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="174" VerticalAlignment="Top" Width="63" Margin="189,125,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="174" VerticalAlignment="Top" Width="75" Margin="251,125,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <Label x:Name="place" Content="Place" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="196,101,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="type" Content="Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,100,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="263,101,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <ListBox x:Name="listBox3" HorizontalAlignment="Left" Height="174" VerticalAlignment="Top" Width="54" Margin="324,125,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <Label x:Name="age" Content="Age" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,100,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
 
     </Grid>
 </Window>

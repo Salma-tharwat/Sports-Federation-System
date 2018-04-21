@@ -8,7 +8,7 @@
         Title="Display_Club" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="78,71,0,0" VerticalAlignment="Top" Height="163" Width="305"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="50,250,0,0" VerticalAlignment="Top" Width="92" Height="61">
@@ -21,7 +21,7 @@
                 <ImageBrush ImageSource="search.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Margin="327,250,0,0" VerticalAlignment="Top" Width="92" Height="61" RenderTransformOrigin="0.332,0.266">
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Margin="327,250,0,0" VerticalAlignment="Top" Width="92" Height="61" RenderTransformOrigin="0.332,0.266" Click="button2_Click">
             <Button.Background>
                 <ImageBrush ImageSource="view.png"/>
             </Button.Background>

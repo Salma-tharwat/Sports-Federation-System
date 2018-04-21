@@ -94,5 +94,10 @@ namespace SFS
                 listBox1.ItemsSource = filtered_dep;
                 listBox2.ItemsSource = filtered_Salary;
         }
+
+        private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

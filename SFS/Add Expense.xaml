@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Add_Expense" Height="350" Width="500">
     <Window.Background>
-        <ImageBrush ImageSource="backgrd.png"/>
+        <ImageBrush ImageSource="new.png"/>
     </Window.Background>
     <Grid>
-        <Label x:Name="label" Content="Value" HorizontalAlignment="Left" Height="36" Margin="27,41,0,0" VerticalAlignment="Top" Width="164" FontSize="24"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="56,91,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="121" FontSize="22"/>
-        <ComboBox x:Name="expense_month" HorizontalAlignment="Left" Height="35" Margin="56,204,0,0" VerticalAlignment="Top" Width="149" Cursor="Arrow" FontSize="24" >
+        <Label x:Name="label" Content="Value :" HorizontalAlignment="Left" Height="36" Margin="17,41,0,0" VerticalAlignment="Top" Width="164" FontSize="24"/>
+        <TextBox x:Name="textBox" TextAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="60,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" FontSize="22"/>
+        <ComboBox x:Name="expense_month" HorizontalAlignment="Left" Height="32" Margin="56,198,0,0" VerticalAlignment="Top" Width="149" Cursor="Arrow" FontSize="24" >
             <ComboBoxItem>January</ComboBoxItem>
             <ComboBoxItem>February</ComboBoxItem>
             <ComboBoxItem>March</ComboBoxItem>
@@ -26,7 +26,7 @@
             <ComboBoxItem>November</ComboBoxItem>
             <ComboBoxItem>December</ComboBoxItem>
         </ComboBox>
-        <Label x:Name="label1" Content="Month" HorizontalAlignment="Left" Height="38" Margin="27,146,0,0" VerticalAlignment="Top" Width="122" FontSize="24"/>
+        <Label x:Name="label1" Content="Month :" HorizontalAlignment="Left" Height="43" Margin="14,151,0,0" VerticalAlignment="Top" Width="122" FontSize="24"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="63" Margin="405,256,0,0" VerticalAlignment="Top" Width="87" BorderThickness="0" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="Add.png"/>
@@ -38,7 +38,7 @@
             </Button.Background>
         </Button>
         <Label x:Name="label2" Content="Description :" HorizontalAlignment="Left" Height="42" Margin="272,70,0,0" VerticalAlignment="Top" Width="190" FontSize="24"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="84" Margin="284,126,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="178" IsEnabled="False" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontSize="24"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="82" Margin="272,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" FontSize="24" TextChanged="textBox1_TextChanged"/>
 
     </Grid>
 </Window>

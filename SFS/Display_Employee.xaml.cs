@@ -26,8 +26,72 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Search_Employee x = new Search_Employee();
-            x.Show();
+            if (textBox.Text == "")
+            {
+                MessageBox.Show("Please fill the required information");
+            }
+            List<int> working_year = new List<int>();
+            List<string> employment_date = new List<string>();
+            List<string> Status = new List<string>();
+            List<string> department = new List<string>();
+            for (int i = 0; i < Containers.Employee_list.Count; i++)
+            {
+                if (Containers.Employee_list[i].getId() == textBox.Text)
+                {
+                    working_year.Add(Containers.Employee_list[i].getWorking_Year());
+                    employment_date.Add(Containers.Employee_list[i].getEmployment_date());
+                    Status.Add(Containers.Employee_list[i].GetStatus());
+                    department.Add(Containers.Employee_list[i].GetDepartment());
+                }
+                listBox.ItemsSource = working_year;
+                listBox1.ItemsSource = employment_date;
+                listBox2.ItemsSource = Status;
+                listBox3.ItemsSource = department;
+            }
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (textBox.Text == "")
+            {
+                List<int> working_year = new List<int>();
+                List<string> employment_date = new List<string>();
+                List<string> Status = new List<string>();
+                List<string> department = new List<string>();
+                for (int i = 0; i < Containers.Employee_list.Count; i++)
+                {
+
+                    working_year.Add(Containers.Employee_list[i].getWorking_Year());
+                    employment_date.Add(Containers.Employee_list[i].getEmployment_date());
+                    Status.Add(Containers.Employee_list[i].GetStatus());
+                    department.Add(Containers.Employee_list[i].GetDepartment());
+                }
+                listBox.ItemsSource = working_year;
+                listBox1.ItemsSource = employment_date;
+                listBox2.ItemsSource = Status;
+                listBox3.ItemsSource = department;
+            }
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            displayOptions m = new displayOptions();
+            m.Show();
+            this.Close();
+        
+    }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

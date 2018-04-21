@@ -10,25 +10,32 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <ComboBox x:Name="choose" Margin="104,90,112,208" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox x:Name="choose" Margin="174,128,125.333,161.333" SelectionChanged="ComboBox_SelectionChanged" Height="32">
             <ComboBoxItem>Mobile_Number</ComboBoxItem>
             <ComboBoxItem>Salary</ComboBoxItem>
             <ComboBoxItem>Avaliable</ComboBoxItem>
             <ComboBoxItem>Department</ComboBoxItem>
+            <ComboBoxItem>Password</ComboBoxItem>
+            <ComboBoxItem>Bonus</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="button1_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Margin="421,271,0,0" Click="button1_Click" Height="48" BorderThickness="0">
+                <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="30" Height="Auto" Margin="0,0,463.333,294.333" Click="button3_Click">
             <Button.Background>
-                <ImageBrush ImageSource="next1.png"/>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label2_Copy11" Content="Change:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0">
+        <Button x:Name="button1_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Margin="417,271,0,0" Click="button1_Click" Height="48" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="next.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label2_Copy11" Content="Change:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,126,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0">
             <Label.Background>
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="50" Margin="0,272,0,-2" Click="button_Click">
+        <Button x:Name="button"  BorderThickness="0" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="50" Margin="0,272,0,-2" Click="button_Click">
             <Button.Background>
-                <ImageBrush ImageSource="back1.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

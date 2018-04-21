@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Coaches>
+  <Coach>
+    <Coach_Name>Talia</Coach_Name>
+    <Coach_ID>Ta19</Coach_ID>
+    <Mobile_Number>01212735291</Mobile_Number>
+    <Gender>Female</Gender>
+    <Medical_Form>YES</Medical_Form>
+    <Salary>2000</Salary>
+    <Bonus>0</Bonus>
+    <Employement_Date>1/4/2016</Employement_Date>
+    <Working_Years>2</Working_Years>
+    <Date_of_birth>12/25/1997</Date_of_birth>
+    <Available>No</Available>
+    <Department>Coach</Department>
+    <Results>0</Results>
+    <Password>tota</Password>
+  </Coach>
+</Coaches>

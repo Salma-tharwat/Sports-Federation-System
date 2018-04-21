@@ -56,12 +56,17 @@ namespace SFS
                 ds.Show();
                 this.Close();
             }
-            //players n2sa       
+            else if (comboBox.Text == "Players")
+            {
+                TeamPlayers tp = new TeamPlayers();
+                tp.Show();
+                this.Close();
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Options op = new Options();
+            adminoptions op = new adminoptions();
             op.Show();
             this.Close();
 

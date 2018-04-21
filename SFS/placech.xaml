@@ -14,19 +14,22 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="place" HorizontalAlignment="Left" VerticalAlignment="Top" Height="224" Width="281" Margin="77.333,80,0,0" Grid.Column="1"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="377.333,253,0,0" Height="58" Click="button_Click" Grid.Column="1">
+        <Button x:Name="button" Content=""  BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="377.333,253,0,0" Height="58" Click="button_Click" Grid.Column="1">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="10,253,0,0" Height="58" Grid.ColumnSpan="2" Click="button1_Click">
+        <Button x:Name="button1" Content=""  BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="10,253,0,0" Height="58" Grid.ColumnSpan="2" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label" Content="Place :" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="84" Margin="104.333,38,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" Grid.Column="1"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Margin="183.333,48,0,0" FontSize="16" FontFamily="Traditional Arabic" Grid.Column="1"/>
+        <Label x:Name="label" Content="Place :" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="84" Margin="104.333,36,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" Grid.Column="1"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Margin="183.333,43,0,0" FontSize="16" FontFamily="Traditional Arabic" Grid.Column="1" Text="search" TextChanged="textBox_TextChanged"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="100" Grid.Column="1" Margin="222.333,109,0,0"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="100" Grid.Column="1" Margin="123.333,109,0,0" RenderTransformOrigin="2.472,1.595"/>
+        <Label x:Name="place" Content="Place" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150.333,82,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="1"/>
+        <Label x:Name="type" Content="Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="242.333,82,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="1"/>
 
     </Grid>
 </Window>

@@ -103,8 +103,11 @@ namespace SFS
 
         public int ageCalculator()
         {
-
-            return 2018 - int.Parse(getDateOfBirth().Substring(7));
+            DateTime dob = Convert.ToDateTime(dateOfBirth);
+            var today = DateTime.Today;
+            var age = today.Year - dob.Year;
+            if (dob > today.AddYears(-age)) age--;
+            return int.Parse(age.ToString());
         }
         public virtual void displayInfo()
         {

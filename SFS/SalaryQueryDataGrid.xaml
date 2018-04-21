@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="86" Click="button_Click">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="89" VerticalAlignment="Top" Width="92" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -19,14 +19,17 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="212" Margin="10,104,0,0" VerticalAlignment="Top" Width="165"/>
-        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="211" Margin="180,104,0,0" VerticalAlignment="Top" Width="156"/>
-        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="212" Margin="341,104,0,0" VerticalAlignment="Top" Width="141"/>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="64" Margin="143,10,0,0" VerticalAlignment="Top" Width="72" BorderThickness="0" Click="button1_Click">
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="240" Margin="10,160,0,0" VerticalAlignment="Top" Width="138"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="245" Margin="148,155,0,0" VerticalAlignment="Top" Width="133" SelectionChanged="listBox1_SelectionChanged"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="245" Margin="286,155,0,0" VerticalAlignment="Top" Width="141"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="79" Margin="143,0,0,0" VerticalAlignment="Top" Width="92" BorderThickness="0" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="view.png"/>
             </Button.Background>
         </Button>
+        <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Height="37" Margin="16,118,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label x:Name="label1" Content="Department" HorizontalAlignment="Left" Height="37" Margin="180,118,0,0" VerticalAlignment="Top" Width="91"/>
+        <Label x:Name="label2" Content="Salary" HorizontalAlignment="Left" Height="32" Margin="316,118,0,0" VerticalAlignment="Top" Width="93"/>
 
     </Grid>
 </Window>

@@ -11,8 +11,8 @@
     </Window.Background>
     <Grid>
         <Label x:Name="label" Content="Enter ID:" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="213,130,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="184" TextChanged="textBox_TextChanged"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="367,241,0,0" VerticalAlignment="Top" Width="100" Height="70">
+        <TextBox x:Name="textBox" TextAlignment="Center" HorizontalAlignment="Left" Height="32" Margin="213,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" BorderThickness="0" Content="" HorizontalAlignment="Left" Margin="367,241,0,0" VerticalAlignment="Top" Width="100" Height="70">
             <Button.Background>
                 <ImageBrush ImageSource="search.png"/>
             </Button.Background>

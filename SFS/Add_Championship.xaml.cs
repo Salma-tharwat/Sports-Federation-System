@@ -33,10 +33,10 @@ namespace SFS
         {
             string sen;
             if (Senior.IsChecked == true)
-                sen = "Yes";
-            else sen = "No";
+                sen = "Senior";
+            else sen = "Junior";
 
-            if (type.Text == "" || (Senior.IsChecked == false && junior.IsChecked == false) || result.Text == ""||place.Text=="")
+            if (type.Text == "" || (Senior.IsChecked == false && junior.IsChecked == false) || place.Text=="")
             {
                 MessageBox.Show("Please fill the required information !");
             }
@@ -61,8 +61,10 @@ namespace SFS
                 document.WriteString(sen);
                 document.WriteEndElement();
 
-                document.WriteStartElement("Results");
-                document.WriteString(result.Text);
+                
+
+                document.WriteStartElement("Name");
+                document.WriteString(name.Text);
                 document.WriteEndElement();
 
                 document.WriteEndElement();
@@ -79,7 +81,7 @@ namespace SFS
                 XmlDocument doc = new XmlDocument();
                 doc.Load("Championships.xml");
 
-                XmlNode Championshipp = doc.CreateElement("Championships");
+                XmlNode Championshipp = doc.CreateElement("Championship");
 
                 XmlNode typee = doc.CreateElement("Type_of_Championship");
                 typee.InnerText = type.Text;
@@ -93,9 +95,11 @@ namespace SFS
                 senior.InnerText = sen;
                 Championshipp.AppendChild(senior);
 
-                XmlNode res = doc.CreateElement("Results");
-                res.InnerText = result.Text;
-                Championshipp.AppendChild(res);
+
+
+                XmlNode na = doc.CreateElement("Name");
+                na.InnerText = name.Text;
+                Championshipp.AppendChild(na);
 
                 doc.DocumentElement.AppendChild(Championshipp);
                 doc.Save("Championships.xml");
@@ -109,6 +113,7 @@ namespace SFS
         {
             Add_Options cccc = new Add_Options();
             cccc.Show();
+            this.Hide();
         }
     }
 }

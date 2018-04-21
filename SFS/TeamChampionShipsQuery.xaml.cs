@@ -19,8 +19,6 @@ namespace SFS
     /// </summary>
     public partial class TeamChampionShipsQuery : Window
     {
-        public static string name = "";
-        public static string place = "";
         public TeamChampionShipsQuery()
         {
             InitializeComponent();
@@ -28,13 +26,18 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Containers.championship_list.Count().ToString());
-            name = comboBox.Text;
-            place=textBox1.Text;
-           
-            ChampionshipTeamsDatagrid cd = new ChampionshipTeamsDatagrid();
-            cd.Show();
-            this.Close();
+            List<Team> filtered = new List<Team>();
+            for(int i=0;i<Containers.championship_list.Count();i++)
+            {
+                if(Containers.championship_list[i].getName()==textBox.Text  && Containers.championship_list[i].GetPlace()==textBox1.Text)
+                {
+                   // filtered = Containers.championship_list[i].teamList;
+                }
+               
+            }
+            //ChampionshipTeamsDatagrid cd = new ChampionshipTeamsDatagrid();
+           // cd.Show();
+           // this.Close();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

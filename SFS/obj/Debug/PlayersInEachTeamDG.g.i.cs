@@ -80,6 +80,30 @@ namespace SFS {
         #line default
         #line hidden
         
+        
+        #line 29 "..\..\PlayersInEachTeamDG.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label label;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 30 "..\..\PlayersInEachTeamDG.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label label1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 31 "..\..\PlayersInEachTeamDG.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label label2;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -136,6 +160,15 @@ namespace SFS {
             return;
             case 5:
             this.listBox2 = ((System.Windows.Controls.ListBox)(target));
+            return;
+            case 6:
+            this.label = ((System.Windows.Controls.Label)(target));
+            return;
+            case 7:
+            this.label1 = ((System.Windows.Controls.Label)(target));
+            return;
+            case 8:
+            this.label2 = ((System.Windows.Controls.Label)(target));
             return;
             }
             this._contentLoaded = true;

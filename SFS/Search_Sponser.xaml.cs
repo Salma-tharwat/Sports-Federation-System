@@ -26,19 +26,7 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            List<Sponsers> find_Sponser = new List<Sponsers>();
-            if (textBox.Text == "")
-            {
-                MessageBox.Show("Please fill the required information");
-            }
-            for (int i = 0; i < Containers.Sponsor_list.Count; i++)
-            {
-                if (Containers.Sponsor_list[i].GetName() == textBox.Text)
-                {
-                    find_Sponser.Add(Containers.Sponsor_list[i]);
-                }
-
-            }
+          
         }
     }
 }

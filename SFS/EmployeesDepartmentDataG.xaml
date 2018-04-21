@@ -13,7 +13,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="84" Margin="0,265,0,-5" Click="button_Click">
+        <Button x:Name="button" BorderThickness="0" Content="" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="84" Margin="389,230,0,0" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -21,14 +21,22 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="217" Margin="10,43,0,0" VerticalAlignment="Top" Width="119"/>
-        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="217" VerticalAlignment="Top" Width="100" Margin="129,43,0,0"/>
-        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="217" Margin="229,43,0,0" VerticalAlignment="Top" Width="130"/>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="78" Margin="399,241,0,0" VerticalAlignment="Top" Width="93" BorderThickness="0" Click="button1_Click">
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="30" Height="Auto" Margin="0,0,463.333,294.333" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="205" Margin="10,104,0,0" VerticalAlignment="Top" Width="119"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="205" VerticalAlignment="Top" Width="100" Margin="134,104,0,0"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="205" Margin="239,104,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="78" Margin="389,92,0,0" VerticalAlignment="Top" Width="93" BorderThickness="0" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="view.png"/>
             </Button.Background>
         </Button>
+        <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Height="24" Margin="11,75,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="label1" Content="Salary" HorizontalAlignment="Left" Height="24" Margin="150,75,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.404,0.463"/>
+        <Label x:Name="label2" Content="Mobile" HorizontalAlignment="Left" Height="24" Margin="252,75,0,0" VerticalAlignment="Top" Width="97"/>
 
     </Grid>
 </Window>
